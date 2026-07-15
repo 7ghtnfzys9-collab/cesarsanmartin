@@ -6,56 +6,37 @@
 <title>César San Martín — Barítono</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Great+Vibes&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
-:root {
-  --gray: #2e2e2e;
-  --white: #f0ebe2;
-  --dim: #7a7670;
-  --clay: #b07253;
-  --clay-lt: #c98d6a;
-  --line: #3a3a3a;
-  --line-lt: #ddd8ce;
-  --max: 960px;
+:root{
+  --gray:#2e2e2e;
+  --white:#f0ebe2;
+  --dim:#7a7670;
+  --clay:#b07253;
+  --clay-lt:#c98d6a;
+  --line:#3a3a3a;
+  --line-lt:#ddd8ce;
+  --max:960px;
+  --hv:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0;}
 html{scroll-behavior:smooth;}
 body{
-  background:var(--white);
-  color:var(--gray);
-  font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;
-  font-weight:200;
-  line-height:1.75;
-  letter-spacing:.03em;
+  background:var(--white);color:var(--gray);
+  font-family:var(--hv);font-weight:300;
+  line-height:1.75;letter-spacing:.02em;
   -webkit-font-smoothing:antialiased;
 }
 a{color:inherit;text-decoration:none;}
 img{display:block;}
 
 /* NAV */
-nav{
-  position:sticky;top:0;z-index:100;
-  background:var(--white);
-  border-bottom:1px solid var(--line-lt);
-}
-.nav-inner{
-  max-width:var(--max);margin:0 auto;
-  padding:0 32px;
-  display:flex;align-items:center;justify-content:space-between;gap:24px;
-  height:60px;
-}
-.nav-brand{
-  font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;
-  font-size:11px;font-weight:200;letter-spacing:.22em;text-transform:uppercase;
-  white-space:nowrap;flex-shrink:0;
-}
+nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:1px solid var(--line-lt);}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;gap:24px;height:60px;}
+.nav-brand{font-family:var(--hv);font-size:13px;font-weight:300;letter-spacing:.18em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;}
 .nav-links{display:flex;gap:0;overflow-x:auto;scrollbar-width:none;}
 .nav-links::-webkit-scrollbar{display:none;}
-.nav-links a{
-  font-size:10px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--dim);white-space:nowrap;padding:0 12px;height:60px;
-  display:flex;align-items:center;border-bottom:2px solid transparent;
-}
+.nav-links a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);white-space:nowrap;padding:0 12px;height:60px;display:flex;align-items:center;border-bottom:2px solid transparent;}
 .nav-links a:hover{color:var(--gray);}
 .nav-links a.active{color:var(--clay);border-bottom-color:var(--clay);}
 
@@ -64,261 +45,181 @@ nav{
 .page.active{display:block;}
 
 /* HERO */
-.hero{
-  position:relative;width:100%;height:calc(100vh - 60px);
-  min-height:480px;overflow:hidden;
-}
-.hero img{
-  position:absolute;inset:0;
-  width:100%;height:100%;
-  object-fit:cover;object-position:left center;
-}
-.hero-overlay{
-  position:absolute;inset:0;
-  background:linear-gradient(to left,rgba(46,46,46,.0) 0%,rgba(46,46,46,.28) 45%,rgba(46,46,46,.42) 100%);
-}
-.hero-text{
-  position:absolute;inset:0;
-  display:flex;flex-direction:column;justify-content:center;
-  padding:0 64px;padding-bottom:48vh;
-  max-width:620px;margin-left:auto;
-}
-.hero-label{
-  font-size:11px;letter-spacing:.28em;text-transform:uppercase;
-  color:var(--clay);margin-bottom:14px;
-}
-.hero-name{
-  font-family:'Great Vibes',cursive;
-  font-size:clamp(44px,6vw,80px);
-  font-weight:400;line-height:1.1;
-  color:var(--white);
-}
-@media(max-width:600px){
-  .hero-text{padding:0 32px;padding-bottom:40vh;margin-left:0;}
-}
+.hero{position:relative;width:100%;height:calc(100vh - 60px);min-height:480px;overflow:hidden;}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(to left,rgba(46,46,46,.0) 0%,rgba(46,46,46,.28) 45%,rgba(46,46,46,.42) 100%);}
+.hero-text{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:0 64px;padding-bottom:48vh;max-width:620px;margin-left:auto;}
+.hero-label{font-size:13px;letter-spacing:.28em;text-transform:uppercase;color:var(--clay);margin-bottom:14px;}
+.hero-name{font-family:'Great Vibes',cursive;font-size:clamp(43px,5.8vw,79px);font-weight:400;line-height:1.1;color:var(--white);}
+.hero-subtitle{font-family:var(--hv);font-size:15px;font-weight:300;letter-spacing:.32em;text-transform:uppercase;color:var(--white);opacity:.85;margin-top:14px;}
+@media(max-width:600px){.hero-text{padding:0 28px;padding-bottom:20vh;margin-left:0;max-width:100%;justify-content:flex-end;}}
 
 /* SHARED */
 .wrap{max-width:var(--max);margin:0 auto;padding:0 32px;}
-.section-label{
-  font-size:10px;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--clay);margin-bottom:12px;
-}
-.section-title{
-  font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;
-  font-size:clamp(20px,3vw,30px);
-  font-weight:100;letter-spacing:.04em;margin-bottom:48px;
-}
-.read-more{
-  display:inline-block;margin-top:18px;
-  font-size:10px;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--clay);border-bottom:1px solid var(--clay);padding-bottom:2px;
-}
+.section-label{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--clay);margin-bottom:12px;}
+.section-title{font-family:var(--hv);font-size:clamp(24px,3.2vw,35px);font-weight:100;letter-spacing:.04em;margin-bottom:48px;}
+.read-more{display:inline-block;margin-top:18px;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);border-bottom:1px solid var(--clay);padding-bottom:2px;}
 .read-more:hover{color:var(--clay-lt);border-color:var(--clay-lt);}
+.btn-outline{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--clay);border:1px solid var(--clay);padding:10px 22px;border-radius:1px;white-space:nowrap;display:inline-block;}
+.btn-outline:hover{background:var(--clay);color:var(--white);}
+.btn-outline-inv{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--white);border:1px solid var(--white);padding:10px 22px;border-radius:1px;white-space:nowrap;display:inline-block;}
+.btn-outline-inv:hover{background:var(--white);color:var(--gray);}
 
 /* MARQUEE */
-.marquee-wrap{
-  border-top:1px solid var(--line-lt);border-bottom:1px solid var(--line-lt);
-  padding:18px 0;overflow:hidden;background:var(--white);
-}
-.marquee-track{
-  display:flex;gap:48px;white-space:nowrap;
-  animation:scroll 40s linear infinite;width:max-content;
-}
+.marquee-wrap{border-top:1px solid var(--line-lt);border-bottom:1px solid var(--line-lt);padding:18px 0;overflow:hidden;background:var(--white);}
+.marquee-track{display:flex;gap:48px;white-space:nowrap;animation:scroll 40s linear infinite;width:max-content;}
 @media(prefers-reduced-motion:reduce){.marquee-track{animation:none;}}
 @keyframes scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-.marquee-track span{
-  font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;
-  font-weight:200;font-size:13px;letter-spacing:.12em;color:var(--dim);
-}
+.press-marquee-track{animation-duration:60s;}
+.marquee-track span{font-family:var(--hv);font-weight:300;font-size:15px;letter-spacing:.12em;color:var(--dim);}
 .marquee-track .sep{color:var(--clay);}
 
-/* HOME SECTIONS */
-.home-block{padding:72px 0;}
-.home-block+.home-block{border-top:1px solid var(--line-lt);}
-.home-block.dark{background:var(--gray);color:var(--white);}
-.home-block.dark .section-label{color:var(--clay);}
-.home-block.dark .section-title{color:var(--white);}
+/* HOME ALTERNATING SECTIONS */
+.home-section{padding:72px 0;}
+.home-section.light{background:var(--white);}
+.home-section.dark{background:var(--gray);color:var(--white);}
+.home-section.dark .section-label{color:var(--clay-lt);}
+.home-section.dark .section-title{color:var(--white);}
+.home-section.dark p{color:#c8c2b8;}
+.home-section.dark .read-more{color:var(--clay-lt);border-color:var(--clay-lt);}
 
-/* HOME: 3 summary cards */
-.summary-grid{
-  display:grid;grid-template-columns:repeat(3,1fr);gap:0;
-  border-top:1px solid var(--line-lt);
-}
-@media(max-width:700px){.summary-grid{grid-template-columns:1fr;}}
-.summary-card{
-  padding:48px 40px;border-right:1px solid var(--line-lt);
-}
-.summary-card:last-child{border-right:none;}
-@media(max-width:700px){
-  .summary-card{border-right:none;border-bottom:1px solid var(--line-lt);}
-  .summary-card:last-child{border-bottom:none;}
-}
-.summary-card .section-label{margin-bottom:18px;}
-.summary-card h3{
-  font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;
-  font-size:13px;font-weight:200;letter-spacing:.04em;
-  color:var(--gray);line-height:1.7;margin-bottom:8px;
-}
-.summary-card .mini-concert{
-  padding:10px 0;border-bottom:1px solid var(--line-lt);
-  font-size:12px;color:var(--dim);
-}
-.summary-card .mini-concert strong{color:var(--gray);font-weight:300;display:block;}
-.insta-widget{
-  display:flex;flex-direction:column;gap:12px;
-}
-.insta-link{
-  display:flex;align-items:center;gap:10px;
-  font-size:12px;color:var(--dim);
-}
-.insta-link svg{flex-shrink:0;}
+/* HOME BIO SNIPPET */
+.home-bio-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+@media(max-width:640px){.home-bio-grid{grid-template-columns:1fr;}}
+.home-bio-img{aspect-ratio:3/4;overflow:hidden;border-radius:2px;}
+.home-bio-img img{width:100%;height:100%;object-fit:cover;}
+
+/* HOME 3-COL CARDS */
+.home-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:0;}
+@media(max-width:700px){.home-cards{grid-template-columns:1fr;}}
+.home-card{padding:48px 36px;border-right:1px solid var(--line);}
+.home-card:last-child{border-right:none;}
+.light .home-card{border-right-color:var(--line-lt);}
+@media(max-width:700px){.home-card{border-right:none;border-bottom:1px solid var(--line);}}
+@media(max-width:700px){.light .home-card{border-bottom-color:var(--line-lt);}}
+@media(max-width:700px){.home-card:last-child{border-bottom:none;}}
+.home-card h3{font-size:16px;font-weight:300;line-height:1.7;margin-top:12px;}
+.dark .home-card h3{color:var(--white);}
+
+/* HOME 2-COL */
+.home-2col{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+@media(max-width:640px){.home-2col{grid-template-columns:1fr;}}
+
+/* MINI CONCERTS */
+.mini-concert{padding:10px 0;border-bottom:1px solid var(--line-lt);font-size:14px;color:var(--dim);}
+.dark .mini-concert{border-bottom-color:var(--line);}
+.mini-concert strong{color:var(--gray);font-weight:300;display:block;}
+.dark .mini-concert strong{color:var(--white);}
+
+/* MINI PRESS */
+.mini-press{padding:14px 0;border-bottom:1px solid var(--line);font-style:italic;font-size:16px;color:#b8b2a8;line-height:1.6;}
+.mini-press cite{display:block;font-style:normal;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--clay-lt);margin-top:6px;}
+
+/* PULL QUOTE */
+.pull-quote{font-style:italic;font-weight:300;font-size:clamp(20px,3vw,26px);line-height:1.5;color:var(--gray);max-width:680px;margin-bottom:12px;}
+.dark .pull-quote{color:var(--white);}
+.pull-author{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);}
 
 /* BIO */
 .bio-cols{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
 @media(max-width:640px){.bio-cols{grid-template-columns:1fr;}}
-.bio-cols p{font-size:14px;line-height:1.9;color:#555;}
+.bio-cols p{font-size:16px;line-height:1.9;color:#555;}
 .bio-cols p+p{margin-top:16px;}
-.bio-note{
-  grid-column:1/-1;border-left:1px solid var(--clay);
-  padding-left:20px;font-style:italic;font-weight:200;font-size:13px;color:var(--dim);
-}
-.home-bio{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
-@media(max-width:640px){.home-bio{grid-template-columns:1fr;}}
-.home-bio-img{aspect-ratio:3/4;overflow:hidden;border-radius:2px;}
-.home-bio-img img{width:100%;height:100%;object-fit:cover;}
-.home-bio-text p{font-size:14px;color:#b8b2a8;line-height:1.9;}
+.bio-note{grid-column:1/-1;border-left:1px solid var(--clay);padding-left:20px;font-style:italic;font-weight:300;font-size:15px;color:var(--dim);}
+.bio-personal{font-size:16px;line-height:2;color:#444;max-width:700px;}
+.bio-personal p+p{margin-top:20px;}
 
 /* CONCERTS */
-.year-group{margin-bottom:48px;}
-.year-label{
-  font-size:10px;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--clay);margin-bottom:16px;padding-bottom:10px;
-  border-bottom:1px solid var(--line-lt);
-}
-.concert-row{
-  display:grid;grid-template-columns:140px 1fr 1fr;
-  gap:16px;padding:14px 0;border-bottom:1px solid var(--line-lt);
-  align-items:baseline;
-}
+.year-group{margin-bottom:0;border-top:1px solid var(--line-lt);}
+.year-toggle{display:flex;align-items:center;justify-content:space-between;padding:18px 0;cursor:pointer;user-select:none;}
+.year-toggle .year-label{margin-bottom:0;padding-bottom:0;border-bottom:none;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--clay);}
+.year-toggle .year-arrow{font-size:13px;color:var(--clay);transition:transform .3s ease;}
+.year-group.open .year-arrow{transform:rotate(180deg);}
+.year-body{display:none;}
+.year-group.open .year-body{display:block;}
+.concert-row{display:grid;grid-template-columns:140px 1fr 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--line-lt);align-items:baseline;}
 @media(max-width:600px){.concert-row{grid-template-columns:1fr;gap:2px;padding:14px 0;}}
-.concert-date{
-  font-size:10px;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--clay);font-weight:200;
-}
-.concert-title{font-size:14px;font-weight:300;}
-.concert-role{font-size:12px;color:var(--dim);font-style:italic;}
-.concert-place{font-size:12px;color:var(--dim);text-align:right;}
+.concert-date{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--clay);font-weight:300;}
+.concert-title{font-size:16px;font-weight:300;}
+.concert-role{font-size:14px;color:var(--dim);font-style:italic;}
+.concert-place{font-size:14px;color:var(--dim);text-align:right;}
 @media(max-width:600px){.concert-place{text-align:left;}}
-.agenda-insta{
-  margin-top:48px;padding:32px;
-  border:1px solid var(--line-lt);border-radius:2px;
-  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;
-}
-.agenda-insta p{font-size:13px;color:var(--dim);max-width:380px;line-height:1.7;}
-.btn-outline{
-  font-size:10px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--clay);border:1px solid var(--clay);
-  padding:10px 22px;border-radius:1px;white-space:nowrap;
-}
-.btn-outline:hover{background:var(--clay);color:var(--white);}
+.agenda-insta{margin-top:48px;padding:32px;border:1px solid var(--line-lt);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;}
+.agenda-insta p{font-size:15px;color:var(--dim);max-width:380px;line-height:1.7;}
 
 /* PRESS */
-.press-item{
-  display:grid;grid-template-columns:110px 1fr;
-  gap:28px;padding:28px 0;border-bottom:1px solid var(--line-lt);align-items:start;
-}
+.press-item{display:grid;grid-template-columns:130px 1fr;gap:28px;padding:28px 0;border-bottom:1px solid var(--line-lt);align-items:start;}
 .press-item:first-child{border-top:1px solid var(--line-lt);}
 @media(max-width:600px){.press-item{grid-template-columns:1fr;gap:8px;}}
-.press-source{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--clay);padding-top:3px;}
-.press-item blockquote{
-  font-style:italic;font-weight:200;font-size:15px;line-height:1.7;color:#333;
-}
-.press-placeholder{
-  padding:48px;text-align:center;border:1px dashed var(--line-lt);
-  font-size:12px;color:var(--dim);letter-spacing:.06em;
-}
+.press-source{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--clay);padding-top:3px;}
+.press-meta{color:var(--dim);font-size:11px;letter-spacing:.06em;margin-top:4px;font-style:normal;text-transform:none;letter-spacing:0;}
+.press-item blockquote{font-style:italic;font-weight:300;font-size:17px;line-height:1.7;color:#333;}
 
 /* NEWS */
 .news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;}
 @media(max-width:640px){.news-grid{grid-template-columns:1fr;}}
-.news-card{
-  padding:28px;border:1px solid var(--line-lt);
-  display:flex;flex-direction:column;gap:10px;
-}
-.news-date{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);}
-.news-title{font-size:15px;font-weight:300;line-height:1.45;color:var(--gray);}
-.news-excerpt{font-size:13px;color:var(--dim);line-height:1.7;}
-.news-link{
-  font-size:10px;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--clay);margin-top:auto;
-}
+.news-card{padding:28px;border:1px solid var(--line-lt);display:flex;flex-direction:column;gap:10px;}
+.news-date{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);}
+.news-title{font-size:17px;font-weight:300;line-height:1.45;color:var(--gray);}
+.news-excerpt{font-size:15px;color:var(--dim);line-height:1.7;}
+.news-link{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);margin-top:auto;}
 .news-link:hover{color:var(--clay-lt);}
+.news-tag{display:inline-block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;background:var(--clay);color:var(--white);padding:3px 8px;margin-bottom:4px;}
 
 /* GALLERY */
-.gallery-sub{
-  font-size:10px;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--clay);margin-bottom:14px;
-}
+.gallery-sub{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--clay);margin-bottom:14px;}
 .gallery-portraits{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
 @media(max-width:600px){.gallery-portraits{grid-template-columns:repeat(2,1fr);}}
-.gallery-portraits .p{aspect-ratio:3/4;overflow:hidden;border-radius:2px;background:#e0dbd2;}
+.gallery-portraits .p{aspect-ratio:3/4;overflow:hidden;border-radius:2px;background:#1a1a1a;}
 .gallery-portraits .p img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
 .gallery-portraits .p:hover img{transform:scale(1.04);}
 .gallery-stage{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:8px;}
 @media(max-width:600px){.gallery-stage{grid-template-columns:1fr;}}
-.gallery-stage .p{aspect-ratio:4/3;overflow:hidden;border-radius:2px;background:#e0dbd2;}
+.gallery-stage .p{aspect-ratio:4/3;overflow:hidden;border-radius:2px;background:#1a1a1a;}
 .gallery-stage .p img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
 .gallery-stage .p:hover img{transform:scale(1.04);}
 
 /* VIDEOS */
-.video-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
-@media(max-width:600px){.video-grid{grid-template-columns:1fr;}}
-.video-card{
-  aspect-ratio:16/9;position:relative;overflow:hidden;
-  background:#1a1a1a;border-radius:2px;
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+@media(max-width:700px){.video-grid{grid-template-columns:1fr;}}
+.video-item{display:flex;flex-direction:column;gap:12px;}
+.video-card{aspect-ratio:16/9;position:relative;overflow:hidden;background:#1a1a1a;border-radius:2px;display:block;}
+.video-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease;}
+.video-card:hover img{transform:scale(1.04);}
+.video-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.25);transition:background .3s ease;}
+.video-card:hover .video-play{background:rgba(0,0,0,.4);}
+.video-play svg{width:52px;height:52px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5));transition:transform .3s ease;}
+.video-card:hover .video-play svg{transform:scale(1.1);}
+.video-caption{font-size:13px;color:var(--dim);line-height:1.5;}
+.video-caption strong{display:block;font-size:15px;font-weight:300;color:var(--gray);margin-bottom:2px;}
+.video-channel{margin-top:32px;padding:28px;border:1px solid var(--line-lt);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.video-channel p{font-size:15px;color:var(--dim);}
+
+/* GALLERY TOGGLE */
+.gallery-more{display:none;}
+.gallery-more.open{display:grid;}
+.gallery-toggle-btn{
+  margin-top:16px;
+  font-size:12px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--clay);border:none;background:none;cursor:pointer;
+  font-family:var(--hv);padding:10px 0;
+  display:flex;align-items:center;gap:8px;
 }
-.video-card iframe{width:100%;height:100%;border:none;}
-.video-channel{
-  margin-top:32px;padding:28px;border:1px solid var(--line-lt);
-  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;
-}
-.video-channel p{font-size:13px;color:var(--dim);}
+.gallery-toggle-btn:hover{color:var(--clay-lt);}
+.gallery-toggle-btn .arrow{transition:transform .3s ease;display:inline-block;}
+.gallery-toggle-btn.open .arrow{transform:rotate(180deg);}
 
 /* CONTACT FORM */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;}
 @media(max-width:640px){.contact-grid{grid-template-columns:1fr;}}
-.contact-intro{
-  font-size:clamp(18px,2.8vw,26px);font-weight:100;
-  letter-spacing:.02em;line-height:1.4;margin-bottom:20px;
-}
-.contact-note{font-size:13px;color:var(--dim);line-height:1.8;}
+.contact-intro{font-size:clamp(20px,3vw,28px);font-weight:100;letter-spacing:.02em;line-height:1.4;margin-bottom:20px;}
+.contact-note{font-size:15px;color:var(--dim);line-height:1.8;}
 .form-field{margin-bottom:20px;}
-.form-field label{
-  display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--clay);margin-bottom:8px;
-}
-.form-field input,
-.form-field textarea,
-.form-field select{
-  width:100%;
-  background:transparent;
-  border:none;border-bottom:1px solid var(--line-lt);
-  padding:10px 0;
-  font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;
-  font-size:14px;font-weight:200;letter-spacing:.03em;
-  color:var(--gray);outline:none;resize:none;
-}
-.form-field input:focus,
-.form-field textarea:focus,
-.form-field select:focus{border-bottom-color:var(--clay);}
+.form-field label{display:block;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--clay);margin-bottom:8px;}
+.form-field input,.form-field textarea,.form-field select{width:100%;background:transparent;border:none;border-bottom:1px solid var(--line-lt);padding:10px 0;font-family:var(--hv);font-size:16px;font-weight:300;letter-spacing:.02em;color:var(--gray);outline:none;resize:none;}
+.form-field input:focus,.form-field textarea:focus,.form-field select:focus{border-bottom-color:var(--clay);}
 .form-field textarea{min-height:120px;}
-.form-submit{
-  display:inline-block;
-  font-size:10px;letter-spacing:.18em;text-transform:uppercase;
-  background:var(--clay);color:var(--white);
-  border:none;padding:14px 32px;cursor:pointer;
-  font-family:'Helvetica Neue',HelveticaNeue,Helvetica,Arial,sans-serif;
-}
+.form-submit{font-size:12px;letter-spacing:.18em;text-transform:uppercase;background:var(--clay);color:var(--white);border:none;padding:14px 32px;cursor:pointer;font-family:var(--hv);}
 .form-submit:hover{background:var(--clay-lt);}
 
 /* INNER */
@@ -326,52 +227,15 @@ nav{
 .inner-page+.inner-page{border-top:1px solid var(--line-lt);}
 .inner-dark{background:var(--gray);color:var(--white);padding:72px 0;}
 .inner-dark .section-label{color:var(--clay);}
-.inner-dark .concert-row{border-bottom-color:var(--line);}
-.inner-dark .year-label{border-bottom-color:var(--line);color:var(--clay-lt);}
 
 /* FOOTER */
-footer{
-  background:var(--gray);color:var(--white);
-  padding:48px 0 32px;border-top:1px solid var(--line);
-}
-.foot-inner{
-  display:flex;justify-content:space-between;align-items:flex-end;
-  flex-wrap:wrap;gap:20px;margin-bottom:32px;
-}
-.foot-brand{
-  font-family:'Great Vibes',cursive;
-  font-size:36px;color:var(--white);
-}
+footer{background:var(--gray);color:var(--white);padding:48px 0 32px;border-top:1px solid var(--line);}
+.foot-inner{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;margin-bottom:32px;}
+.foot-brand{font-family:'Great Vibes',cursive;font-size:36px;color:var(--white);}
 .foot-links{display:flex;gap:20px;flex-wrap:wrap;}
-.foot-links a{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);}
+.foot-links a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);}
 .foot-links a:hover{color:var(--white);}
-.foot-meta{font-size:11px;color:var(--dim);letter-spacing:.06em;}
-
-
-/* ACCORDION AÑOS */
-.year-group { margin-bottom: 0; border-top: 1px solid var(--line-lt); }
-.year-toggle {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 18px 0; cursor: pointer; user-select: none;
-}
-.year-toggle .year-label {
-  margin-bottom: 0; padding-bottom: 0; border-bottom: none;
-  font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: var(--clay);
-}
-.year-toggle .year-arrow {
-  font-size: 11px; color: var(--clay); transition: transform .3s ease;
-}
-.year-group.open .year-arrow { transform: rotate(180deg); }
-.year-body { display: none; }
-.year-group.open .year-body { display: block; }
-
-/* PULL QUOTE */
-.pull-quote{
-  font-style:italic;font-weight:200;
-  font-size:clamp(18px,2.8vw,24px);line-height:1.5;
-  color:var(--gray);max-width:680px;margin-bottom:12px;
-}
-.pull-author{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);}
+.foot-meta{font-size:13px;color:var(--dim);letter-spacing:.06em;}
 </style>
 </head>
 <body>
@@ -381,7 +245,7 @@ footer{
     <div class="nav-brand">César San Martín</div>
     <div class="nav-links">
       <a href="#" class="active" data-page="home">Inicio</a>
-      <a href="#" data-page="sobre-mi">Sobre mí</a>
+      <a href="#" data-page="sobre-mi">Mi historia</a>
       <a href="#" data-page="agenda">Agenda</a>
       <a href="#" data-page="media">Vídeos y fotos</a>
       <a href="#" data-page="noticias">Noticias</a>
@@ -398,107 +262,134 @@ footer{
     <img src="img/hero.jpg" alt="César San Martín, barítono">
     <div class="hero-overlay"></div>
     <div class="hero-text">
-      <div class="hero-label">Barítono</div>
       <h1 class="hero-name">César S. Martín</h1>
+      <div class="hero-subtitle" style="margin-top:4px;">&nbsp;&nbsp;Barítono</div>
     </div>
   </div>
 
   <div class="marquee-wrap">
     <div class="marquee-track">
-      <span>Teatro Real</span><span class="sep"> · </span>
-      <span>Teatro de la Zarzuela</span><span class="sep"> · </span>
-      <span>Palau de les Arts</span><span class="sep"> · </span>
-      <span>Teatro de la Maestranza</span><span class="sep"> · </span>
-      <span>Théâtre du Capitole</span><span class="sep"> · </span>
-      <span>Teatro Colón de Bogotá</span><span class="sep"> · </span>
-      <span>Teatro São Carlos</span><span class="sep"> · </span>
-      <span>Maggio Musicale Fiorentino</span><span class="sep"> · </span>
-      <span>Teatro San Carlo de Nápoles</span><span class="sep"> · </span>
-      <span>Teatro G. Rossini de Pesaro</span><span class="sep"> · </span>
-      <span>Teatro Real</span><span class="sep"> · </span>
-      <span>Teatro de la Zarzuela</span><span class="sep"> · </span>
-      <span>Palau de les Arts</span><span class="sep"> · </span>
-      <span>Teatro de la Maestranza</span><span class="sep"> · </span>
-      <span>Théâtre du Capitole</span><span class="sep"> · </span>
-      <span>Teatro Colón de Bogotá</span><span class="sep"> · </span>
-      <span>Teatro São Carlos</span><span class="sep"> · </span>
-      <span>Maggio Musicale Fiorentino</span><span class="sep"> · </span>
-      <span>Teatro San Carlo de Nápoles</span><span class="sep"> · </span>
-      <span>Teatro G. Rossini de Pesaro</span><span class="sep"> · </span>
+      <span>Teatro Real</span><span class="sep"> · </span><span>Teatro de la Zarzuela</span><span class="sep"> · </span><span>Palau de les Arts</span><span class="sep"> · </span><span>Teatro de la Maestranza</span><span class="sep"> · </span><span>Théâtre du Capitole</span><span class="sep"> · </span><span>Teatro Colón de Bogotá</span><span class="sep"> · </span><span>Teatro São Carlos</span><span class="sep"> · </span><span>Maggio Musicale Fiorentino</span><span class="sep"> · </span><span>Teatro San Carlo de Nápoles</span><span class="sep"> · </span><span>Teatro G. Rossini de Pesaro</span><span class="sep"> · </span><span>Teatro Real</span><span class="sep"> · </span><span>Teatro de la Zarzuela</span><span class="sep"> · </span><span>Palau de les Arts</span><span class="sep"> · </span><span>Teatro de la Maestranza</span><span class="sep"> · </span><span>Théâtre du Capitole</span><span class="sep"> · </span><span>Teatro Colón de Bogotá</span><span class="sep"> · </span><span>Teatro São Carlos</span><span class="sep"> · </span><span>Maggio Musicale Fiorentino</span><span class="sep"> · </span><span>Teatro San Carlo de Nápoles</span><span class="sep"> · </span><span>Teatro G. Rossini de Pesaro</span><span class="sep"> · </span>
     </div>
   </div>
 
-  <!-- 3 summary cards -->
-  <div class="summary-grid">
-
-    <div class="summary-card">
-      <div class="section-label">Sobre mí</div>
-      <h3>Uno de los barítonos de referencia del panorama lírico español, reconocido por su canto honesto, expresivo y su profundidad en la construcción de personajes.</h3>
-      <a class="read-more" href="#" data-page="sobre-mi">Leer biografía</a>
+  <!-- SOBRE MÍ -->
+  <div class="home-section light">
+    <div class="wrap">
+      <div class="home-bio-grid">
+        <div class="home-bio-img"><img src="img/retrato-06.jpg" alt="César San Martín"></div>
+        <div>
+          <div class="section-label">Mi historia</div>
+          <p style="font-size:16px;color:#555;line-height:1.9;margin-top:8px;">A los ocho años entré por primera vez en un aula de música, sin saber que aquella tarde cambiaría mi vida. Años mas tarde y después de muchas vueltas buscando, encontré el camino que siempre había estado esperándome.</p>
+          <a class="read-more" href="#" data-page="sobre-mi">Sigue leyendo</a>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <div class="summary-card">
-      <div class="section-label">Próximas actuaciones</div>
-      <div class="mini-concert">
-        <strong>La Verbena de la Paloma</strong>
-        25–27 jun 2026 · Ópera de Tenerife
-      </div>
-      <div class="mini-concert">
-        <strong>Carmina Burana</strong>
-        3 jul 2026 · Getafe
-      </div>
-      <div class="mini-concert">
-        <strong>Pericca e Varrone</strong>
-        10–11 jul 2026 · El Escorial
-      </div>
+  <!-- AGENDA -->
+  <div class="home-section dark">
+    <div class="wrap">
+      <div class="section-label">Agenda</div>
+      <h2 class="section-title">Próximas actuaciones</h2>
+      <div class="mini-concert"><strong>Oratorio de Navidad — Martín Palmeri</strong>18–19 dic 2026 · Cracovia, Polonia</div>
+      <div class="mini-concert"><strong>Katiuska · Pedro Stakof</strong>20–21 nov 2026 · Teatro Gayarre, Pamplona</div>
+      <div class="mini-concert"><strong>La Tabernera del Puerto</strong>30 jul – 2 ago 2026 · Teatro Colón, Bogotá</div>
+      <div class="mini-concert"><strong>Pericca e Varrone — A. Scarlatti</strong>10–11 jul 2026 · Festival Ópera a Quemarropa, Aranjuez</div>
       <a class="read-more" href="#" data-page="agenda">Ver agenda completa</a>
     </div>
-
-    <div class="summary-card">
-      <div class="section-label">Instagram</div>
-      <div class="insta-widget">
-        <p style="font-size:13px;color:var(--dim);line-height:1.7;">Sígueme en Instagram para ver los últimos momentos en escena, ensayos y novedades de mi carrera.</p>
-        <a class="btn-outline" href="https://instagram.com/cesarsanmartin.baritono" target="_blank" rel="noopener" style="display:inline-block;margin-top:8px;">
-          @cesarsanmartin.baritono ↗
-        </a>
-      </div>
-    </div>
-
   </div>
 
-</div>
+  <!-- VÍDEOS -->
+  <div class="home-section light">
+    <div class="wrap">
+      <div class="home-2col">
+        <div>
+          <div class="section-label">Vídeos</div>
+          <h2 class="section-title">En escena</h2>
+          <p style="font-size:16px;color:#555;line-height:1.9;">Fragmentos de actuaciones en directo desde algunos de los principales escenarios líricos.</p>
+          <a class="read-more" href="#" data-page="media">Ver todos los vídeos</a>
+        </div>
+        <div>
+          <a class="video-card" href="https://youtu.be/8PaWL5b3CgA" target="_blank" rel="noopener" style="border-radius:2px;">
+            <img src="https://img.youtube.com/vi/8PaWL5b3CgA/hqdefault.jpg" alt="César San Martín" loading="lazy">
+            <div class="video-play"><svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C56 0 34 0 34 0S12 0 7.5 1.7a8.5 8.5 0 0 0-6 6C0 12.1 0 24 0 24s0 11.9 1.5 16.3a8.5 8.5 0 0 0 6 6C12 48 34 48 34 48s22 0 26.5-1.7a8.5 8.5 0 0 0 6-6C68 35.9 68 24 68 24s0-11.9-1.5-16.3z" fill="#fff" fill-opacity=".9"/><path d="M27 34l18-10-18-10v20z" fill="#b07253"/></svg></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- INSTAGRAM -->
+  <div style="background:var(--gray);padding:56px 0;border-top:1px solid var(--line);">
+    <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;">
+      <div>
+        <div class="section-label" style="color:var(--clay);">Instagram</div>
+        <h2 class="section-title" style="color:var(--white);margin-bottom:12px;">Sígueme</h2>
+        <p style="font-size:15px;color:#b8b2a8;line-height:1.8;">Últimos momentos en escena, ensayos y novedades de la carrera en tiempo real.</p>
+      </div>
+      <a class="btn-outline-inv" href="https://instagram.com/cesarsanmartin.baritono" target="_blank" rel="noopener">@cesarsanmartin.baritono ↗</a>
+    </div>
+  </div>
+
+  <!-- PRENSA MARQUEE -->
+  <div style="background:var(--gray);overflow:hidden;border-top:1px solid var(--line);padding:20px 0;">
+    <div class="marquee-track press-marquee-track" style="gap:64px;">
+      <span style="font-style:italic;color:#b8b2a8;font-size:15px;">«La bandera la colocó César San Martín, como absoluto dominador de toda la velada.» <em style="font-style:normal;color:var(--clay);font-size:12px;letter-spacing:.08em;">— Codalario</em></span>
+      <span style="color:var(--line);font-size:20px;">·</span>
+      <span style="font-style:italic;color:#b8b2a8;font-size:15px;">«El gran protagonista de la representación gracias a una sólida caracterización dramática.» <em style="font-style:normal;color:var(--clay);font-size:12px;letter-spacing:.08em;">— Ópera Actual</em></span>
+      <span style="color:var(--line);font-size:20px;">·</span>
+      <span style="font-style:italic;color:#b8b2a8;font-size:15px;">«Profunda y timbrada voz de barítono, supo resaltar los momentos más emotivos de su papel.» <em style="font-style:normal;color:var(--clay);font-size:12px;letter-spacing:.08em;">— Bachtrack</em></span>
+      <span style="color:var(--line);font-size:20px;">·</span>
+      <span style="font-style:italic;color:#b8b2a8;font-size:15px;">«Hizo un Paquiro muy creíble. Sobrio y elegante. Muy positiva su actuación.» <em style="font-style:normal;color:var(--clay);font-size:12px;letter-spacing:.08em;">— Opera World</em></span>
+      <span style="color:var(--line);font-size:20px;">·</span>
+      <span style="font-style:italic;color:#b8b2a8;font-size:15px;">«Voz bien timbrada que maneja con soltura y una interpretación matizada del personaje.» <em style="font-style:normal;color:var(--clay);font-size:12px;letter-spacing:.08em;">— Opera World</em></span>
+      <span style="color:var(--line);font-size:20px;">·</span>
+      <span style="font-style:italic;color:#b8b2a8;font-size:15px;">«La bandera la colocó César San Martín, como absoluto dominador de toda la velada.» <em style="font-style:normal;color:var(--clay);font-size:12px;letter-spacing:.08em;">— Codalario</em></span>
+      <span style="color:var(--line);font-size:20px;">·</span>
+      <span style="font-style:italic;color:#b8b2a8;font-size:15px;">«El gran protagonista de la representación gracias a una sólida caracterización dramática.» <em style="font-style:normal;color:var(--clay);font-size:12px;letter-spacing:.08em;">— Ópera Actual</em></span>
+      <span style="color:var(--line);font-size:20px;">·</span>
+      <span style="font-style:italic;color:#b8b2a8;font-size:15px;">«Profunda y timbrada voz de barítono, supo resaltar los momentos más emotivos de su papel.» <em style="font-style:normal;color:var(--clay);font-size:12px;letter-spacing:.08em;">— Bachtrack</em></span>
+      <span style="color:var(--line);font-size:20px;">·</span>
+      <span style="font-style:italic;color:#b8b2a8;font-size:15px;">«Hizo un Paquiro muy creíble. Sobrio y elegante. Muy positiva su actuación.» <em style="font-style:normal;color:var(--clay);font-size:12px;letter-spacing:.08em;">— Opera World</em></span>
+      <span style="color:var(--line);font-size:20px;">·</span>
+      <span style="font-style:italic;color:#b8b2a8;font-size:15px;">«Voz bien timbrada que maneja con soltura y una interpretación matizada del personaje.» <em style="font-style:normal;color:var(--clay);font-size:12px;letter-spacing:.08em;">— Opera World</em></span>
+      <span style="color:var(--line);font-size:20px;">·</span>
+    </div>
+  </div>
+</div><!-- /home -->
 
 
 <!-- ===== SOBRE MÍ ===== -->
 <div class="page" id="page-sobre-mi">
   <div class="inner-page">
     <div class="wrap">
-      <div class="section-label">Sobre mí</div>
-      <h2 class="section-title">Barítono lírico madrileño</h2>
-      <div class="bio-cols">
-        <div>
-          <p>César San Martín, nacido en Madrid, inicia sus estudios de piano a los 8 años y comienza su formación vocal a los 23 con la maestra Lola Bosom. Prosigue sus estudios en la Escuela Superior de Canto de Madrid, donde obtiene el Premio Fin de Carrera Lola Rodríguez Aragón.</p>
-          <p>Ha sido galardonado en los concursos internacionales "Francisco Viñas" (Premio Especial, 2010) y "Ciudad de Logroño" (Primer Premio). Desde su debut en el Teatro Real de Madrid en 2008 con Il barbiere di Siviglia, ha desarrollado una carrera de más de quince años sobre los grandes escenarios líricos españoles e internacionales.</p>
-          <p>Consolidado como uno de los barítonos de referencia del panorama lírico español, destaca por un canto honesto y expresivo, así como por su versatilidad y la profundidad con la que construye cada personaje.</p>
-        </div>
-        <div>
-          <p>Ha cantado en el Teatro Real y el Teatro de la Zarzuela de Madrid, el Palau de les Arts de Valencia, el Teatro de la Maestranza de Sevilla, el Théâtre du Capitole de Toulouse, el Teatro Colón de Bogotá, el Teatro São Carlos de Lisboa, el Maggio Musicale Fiorentino, el Teatro San Carlo de Nápoles y el Teatro G. Rossini de Pesaro, entre otros.</p>
-          <p>Ha trabajado bajo la batuta de Alberto Zedda, Renato Palumbo, Nicola Luisotti, Eliahu Inbal y Jesús López Cobos, y dirigido escénicamente por Robert Carsen, Peter Sellars, Mario Martone, Graham Vick, Emilio Sagi, Paco Azorín y José Carlos Plaza.</p>
-          <p>Gran conocedor del repertorio de zarzuela, ha estado presente en todas las temporadas del Teatro de la Zarzuela desde el inicio de su carrera.</p>
-        </div>
-        <div class="bio-note">En la actualidad trabaja su repertorio con el barítono Carlos Álvarez y con Valle Duque en la preparación de sus próximos compromisos.</div>
+      <div class="section-label">Mi historia</div>
+      <h2 class="section-title">La música siempre estuvo ahí, esperando</h2>
+      <div class="bio-personal">
+        <p>A los ocho años entré por primera vez en la Escuela Municipal de Música Federico Chueca, sin saber que aquella tarde cambiaría mi vida. Descubrí que unas bolitas y unos palitos sobre cinco líneas podían dar nombre a los sonidos, y esa idea me fascinó. Empecé piano al mismo tiempo y tuve clarísimo lo que quería ser de mayor: director de orquesta. Mi profesora me propuso entrar en el coro de voces blancas, y mi pasión fue creciendo hasta cantar como solista. Entonces llegó la pubertad, y con ella el cambio de voz, una mudanza de ciudad y una nueva escuela donde nunca encontré el mismo feeling.</p>
+        <p>Terminé el grado medio de piano, pero me alejé de la música reglada. Aun así, nunca me fui del todo: toqué el teclado en grupos y orquestas, grabé sintonías y coros para cantantes y programas de televisión, compuse canciones por encargo. La música seguía ahí, esperando.</p>
+        <p>A los 23 años, sin saber qué carrera estudiar, me matriculé en Magisterio Musical en la Universidad Autónoma de Madrid. Entré en el coro y la orquesta de la universidad y, sin ninguna formación vocal, me encontré cantando como solista. Un año después, una profesora de canto —Lola— vio algo en mí y me propuso clases más serias. Poco después me animó a presentarme a la Escuela Superior de Canto de Madrid.</p>
+        <p>Dejé mi trabajo en la Fundación Yamaha Música y organicé mi vida entera alrededor de un objetivo: estudiaba por las mañanas, de 8h a 14h, y vendía telefonía móvil en El Corte Inglés por las tardes, de 16h a 22h, todos los días de la semana. Me tracé un camino: refuerzos en coros como el de RTVE o el del Liceu de Barcelona, después papeles pequeños en compañías pequeñas, luego roles principales y comprimarios en teatros más importantes. Debuté como Vidal en Luisa Fernanda en el Teatro de la Zarzuela y como Fígaro en Il Barbiere di Siviglia con el Ópera Studio del Teatro Real. Tenía 31 años cuando pude, por fin, empezar a vivir del canto.</p>
+        <p>Desde entonces he cantado en teatros como el Teatro Real de Madrid, el Théâtre du Capitole de Toulouse, el Teatro San Carlo de Nápoles, el Teatro Colón de Bogotá, el Gran Teatro Nacional de Lima o el Maggio Musicale Fiorentino.</p>
+        <p>Años después fui padre —padre adoptivo de unos hijos maravillosos— y eso cambió mis prioridades. Rechacé contratos fuera de España para estar cerca de ellos, porque la vida es cuestión de elegir bien qué se antepone a qué. Hoy sigo cantando, ahora cerca de mi familia, viviendo esta profesión como lo que siempre fue para mí: una forma de ser feliz.</p>
       </div>
     </div>
   </div>
   <div class="inner-dark">
     <div class="wrap">
-      <div class="section-label">Próximas temporadas</div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px 48px;margin-top:8px;">
-        <div style="padding:12px 0;border-bottom:1px solid var(--line);font-size:13px;color:#b8b2a8;"><strong style="color:var(--white);font-weight:300;display:block;">Paquiro</strong>Goyescas · Teatro de la Zarzuela</div>
-        <div style="padding:12px 0;border-bottom:1px solid var(--line);font-size:13px;color:#b8b2a8;"><strong style="color:var(--white);font-weight:300;display:block;">Julián</strong>La Verbena de la Paloma · T. de la Zarzuela / Campoamor / Ópera de Tenerife</div>
-        <div style="padding:12px 0;border-bottom:1px solid var(--line);font-size:13px;color:#b8b2a8;"><strong style="color:var(--white);font-weight:300;display:block;">Estreno</strong>Bodas de Sangre · Teatro Real de Madrid</div>
-        <div style="padding:12px 0;border-bottom:1px solid var(--line);font-size:13px;color:#b8b2a8;"><strong style="color:var(--white);font-weight:300;display:block;">Felipe</strong>La Revoltosa · Palacio de Festivales de Cantabria</div>
+      <div class="section-label">Trayectoria</div>
+      <div class="bio-cols" style="margin-top:8px;">
+        <div>
+          <p style="color:#b8b2a8;font-size:16px;line-height:1.9;">Premio Fin de Carrera Lola Rodríguez Aragón en la Escuela Superior de Canto de Madrid. Primer Premio en el Concurso Internacional de Canto «Ciudad de Logroño» y Premio Especial en el «Francisco Viñas».</p>
+          <p style="color:#b8b2a8;font-size:16px;line-height:1.9;margin-top:16px;">Ha trabajado bajo la batuta de Alberto Zedda, Renato Palumbo, Nicola Luisotti, Eliahu Inbal y Jesús López Cobos.</p>
+        </div>
+        <div>
+          <p style="color:#b8b2a8;font-size:16px;line-height:1.9;">Dirigido escénicamente por Robert Carsen, Peter Sellars, Mario Martone, Graham Vick, Emilio Sagi, Paco Azorín y José Carlos Plaza.</p>
+          <p style="color:#b8b2a8;font-size:16px;line-height:1.9;margin-top:16px;">En la actualidad trabaja su repertorio con el barítono Carlos Álvarez y con Valle Duque.</p>
+        </div>
       </div>
+
     </div>
   </div>
 </div>
@@ -511,40 +402,36 @@ footer{
       <div class="section-label">Agenda</div>
       <h2 class="section-title">Actuaciones</h2>
 
-      <!-- PRÓXIMAS 2026 — abierto por defecto -->
       <div class="year-group open">
-        <div class="year-toggle">
-          <div class="year-label">2026 — Próximas actuaciones</div>
-          <span class="year-arrow">▼</span>
-        </div>
+        <div class="year-toggle"><div class="year-label">2026 — Próximas actuaciones</div><span class="year-arrow">▼</span></div>
         <div class="year-body">
           <div class="concert-row"><div class="concert-date">18–19 dic</div><div><div class="concert-title">Oratorio de Navidad — Martín Palmeri</div><div class="concert-role">Barítono solista</div></div><div class="concert-place">Cracovia, Polonia</div></div>
-          <div class="concert-row"><div class="concert-date">20 nov</div><div><div class="concert-title">Katiuska</div></div><div class="concert-place">Teatro Gayarre, Pamplona</div></div>
+          <div class="concert-row"><div class="concert-date">20–21 nov</div><div><div class="concert-title">Katiuska</div><div class="concert-role">Pedro Stakof</div></div><div class="concert-place">Teatro Gayarre, Pamplona</div></div>
           <div class="concert-row"><div class="concert-date">30 jul – 2 ago</div><div><div class="concert-title">La Tabernera del Puerto</div><div class="concert-role">Juan de Eguía</div></div><div class="concert-place">Teatro Colón, Bogotá</div></div>
-          <div class="concert-row"><div class="concert-date">10–11 jul</div><div><div class="concert-title">Pericca e Varrone</div></div><div class="concert-place">San Lorenzo de El Escorial</div></div>
+          <div class="concert-row"><div class="concert-date">10–11 jul</div><div><div class="concert-title">Pericca e Varrone — A. Scarlatti</div></div><div class="concert-place">Festival Ópera a Quemarropa, Aranjuez</div></div>
           <div class="concert-row"><div class="concert-date">3 jul</div><div><div class="concert-title">Carmina Burana — concierto</div><div class="concert-role">Barítono solista</div></div><div class="concert-place">Getafe</div></div>
-          <div class="concert-row"><div class="concert-date">25–27 jun</div><div><div class="concert-title">La Verbena de la Paloma</div><div class="concert-role">Julián</div></div><div class="concert-place">Ópera de Tenerife, Santa Cruz de Tenerife</div></div>
+          <div class="concert-row"><div class="concert-date">25–27 jun</div><div><div class="concert-title">La Verbena de la Paloma</div><div class="concert-role">Julián</div></div><div class="concert-place">Auditorio de Tenerife</div></div>
+          <div class="concert-row"><div class="concert-date">16 may</div><div><div class="concert-title">La Verbena de la Paloma</div><div class="concert-role">Julián</div></div><div class="concert-place">Teatro Campoamor, Oviedo</div></div>
+          <div class="concert-row"><div class="concert-date">25 abr</div><div><div class="concert-title">La Revoltosa</div><div class="concert-role">Felipe</div></div><div class="concert-place">Palacio de Festivales de Cantabria, Santander</div></div>
+          <div class="concert-row"><div class="concert-date">28 feb</div><div><div class="concert-title">El vizconde / Gato por liebre — Barbieri</div></div><div class="concert-place">Teatro Mayor Julio Mario Santo Domingo, Bogotá</div></div>
+          <div class="concert-row"><div class="concert-date">31 ene – 1 feb</div><div><div class="concert-title">Goyescas / El retablo de Maese Pedro</div><div class="concert-role">Paquiro</div></div><div class="concert-place">Teatro de la Zarzuela, Madrid</div></div>
         </div>
       </div>
 
       <div class="year-group">
-        <div class="year-toggle">
-          <div class="year-label">2025</div>
-          <span class="year-arrow">▼</span>
-        </div>
+        <div class="year-toggle"><div class="year-label">2025</div><span class="year-arrow">▼</span></div>
         <div class="year-body">
+          <div class="concert-row"><div class="concert-date">14 nov</div><div><div class="concert-title">Orlando furioso — Vivaldi</div><div class="concert-role">Astolfo</div></div><div class="concert-place">Teatro Campoamor, Oviedo</div></div>
           <div class="concert-row"><div class="concert-date">5–21 jun</div><div><div class="concert-title">La Tabernera del Puerto</div><div class="concert-role">Juan de Eguía</div></div><div class="concert-place">Teatro de la Zarzuela, Madrid</div></div>
           <div class="concert-row"><div class="concert-date">10–11 abr</div><div><div class="concert-title">Réquiem op. 48 — Fauré</div></div><div class="concert-place">Teatro Cervantes, Málaga</div></div>
+          <div class="concert-row"><div class="concert-date">23–24 sep</div><div><div class="concert-title">El vizconde / Gato por liebre — Barbieri</div></div><div class="concert-place">Fundación Juan March, Madrid</div></div>
           <div class="concert-row"><div class="concert-date">18 feb</div><div><div class="concert-title">Un tal Oudrid (Ambigú)</div></div><div class="concert-place">Teatro de la Zarzuela, Madrid</div></div>
           <div class="concert-row"><div class="concert-date">2025</div><div><div class="concert-title">Carmen — Bizet</div><div class="concert-role">Le Dancaïre</div></div><div class="concert-place">AGAO, Pamplona</div></div>
         </div>
       </div>
 
       <div class="year-group">
-        <div class="year-toggle">
-          <div class="year-label">2024</div>
-          <span class="year-arrow">▼</span>
-        </div>
+        <div class="year-toggle"><div class="year-label">2024</div><span class="year-arrow">▼</span></div>
         <div class="year-body">
           <div class="concert-row"><div class="concert-date">7–16 nov</div><div><div class="concert-title">Turandot — Puccini</div></div><div class="concert-place">Teatro de la Maestranza, Sevilla</div></div>
           <div class="concert-row"><div class="concert-date">29 jun</div><div><div class="concert-title">Concierto de Zarzuela</div></div><div class="concert-place">Real Coliseo Carlos III, El Escorial</div></div>
@@ -553,17 +440,12 @@ footer{
           <div class="concert-row"><div class="concert-date">31 may – 1 jun</div><div><div class="concert-title">Carmina Burana — Orff</div><div class="concert-role">Barítono solista</div></div><div class="concert-place">Auditorio Alfredo Kraus, Las Palmas</div></div>
           <div class="concert-row"><div class="concert-date">2024</div><div><div class="concert-title">Manon — Massenet</div><div class="concert-role">Monsieur de Brétigny</div></div><div class="concert-place">Teatro Villamarta, Jerez</div></div>
           <div class="concert-row"><div class="concert-date">2024</div><div><div class="concert-title">Madama Butterfly — Puccini</div><div class="concert-role">Sharpless</div></div><div class="concert-place">Asociación Lírica Luis Mariano</div></div>
-          <div class="concert-row"><div class="concert-date">2024</div><div><div class="concert-title">Romance de Puerto — Sorozábal</div><div class="concert-role">Juan de Eguía</div></div><div class="concert-place">Autoridad Portuaria de Santander</div></div>
-          <div class="concert-row"><div class="concert-date">2024</div><div><div class="concert-title">Concierto Conmemorativo — Beethoven</div><div class="concert-role">Barítono solista</div></div><div class="concert-place">Orquesta y Coro Nacionales de España</div></div>
           <div class="concert-row"><div class="concert-date">2024</div><div><div class="concert-title">La Bohème — Puccini</div><div class="concert-role">Schaunard</div></div><div class="concert-place">Opus Lirica</div></div>
         </div>
       </div>
 
       <div class="year-group">
-        <div class="year-toggle">
-          <div class="year-label">2023</div>
-          <span class="year-arrow">▼</span>
-        </div>
+        <div class="year-toggle"><div class="year-label">2023</div><span class="year-arrow">▼</span></div>
         <div class="year-body">
           <div class="concert-row"><div class="concert-date">2023</div><div><div class="concert-title">Il barbiere di Siviglia — Rossini</div><div class="concert-role">Fígaro</div></div><div class="concert-place">Ensemble Contratemps</div></div>
           <div class="concert-row"><div class="concert-date">2023</div><div><div class="concert-title">Barbieri 200 Años: Dos Sainetes Picarescos</div><div class="concert-role">Pascual</div></div><div class="concert-place">Teatro Real Coliseo Carlos III</div></div>
@@ -573,10 +455,7 @@ footer{
       </div>
 
       <div class="year-group">
-        <div class="year-toggle">
-          <div class="year-label">2022</div>
-          <span class="year-arrow">▼</span>
-        </div>
+        <div class="year-toggle"><div class="year-label">2022</div><span class="year-arrow">▼</span></div>
         <div class="year-body">
           <div class="concert-row"><div class="concert-date">Nov</div><div><div class="concert-title">Policías y ladrones (estreno)</div><div class="concert-role">El Presunto Implicado</div></div><div class="concert-place">Teatro de la Zarzuela, Madrid</div></div>
           <div class="concert-row"><div class="concert-date">2022</div><div><div class="concert-title">Luisa Fernanda — Moreno Torroba</div><div class="concert-role">Vidal Hernando</div></div><div class="concert-place">Palacio de Festivales de Cantabria</div></div>
@@ -586,22 +465,17 @@ footer{
       </div>
 
       <div class="year-group">
-        <div class="year-toggle">
-          <div class="year-label">2021</div>
-          <span class="year-arrow">▼</span>
-        </div>
+        <div class="year-toggle"><div class="year-label">2021</div><span class="year-arrow">▼</span></div>
         <div class="year-body">
           <div class="concert-row"><div class="concert-date">2021</div><div><div class="concert-title">María Moliner — Fons</div><div class="concert-role">Fernando Ramón</div></div><div class="concert-place">Festival de Teatro Lírico Español, Teatro Campoamor</div></div>
           <div class="concert-row"><div class="concert-date">2021</div><div><div class="concert-title">La Bohème — Puccini</div><div class="concert-role">Marcello</div></div><div class="concert-place">Asociación Lírica Luis Mariano</div></div>
         </div>
       </div>
 
-      <!-- Instagram widget -->
       <div class="agenda-insta">
         <p>Sigue <strong>@cesarsanmartin.baritono</strong> en Instagram para ver las últimas novedades de la agenda en tiempo real.</p>
         <a class="btn-outline" href="https://instagram.com/cesarsanmartin.baritono" target="_blank" rel="noopener">Ver Instagram ↗</a>
       </div>
-
     </div>
   </div>
 </div>
@@ -612,28 +486,56 @@ footer{
   <div class="inner-page">
     <div class="wrap">
       <div class="section-label">Vídeos</div>
-      <h2 class="section-title">En escena</h2>
-      <div class="video-channel" style="margin-bottom:24px;">
-        <p>Próximamente: vídeos destacados de actuaciones en directo. Mientras tanto, visita el canal completo en YouTube.</p>
-        <a class="btn-outline" href="https://www.youtube.com/@cesarsanmartin.baritono" target="_blank" rel="noopener">Ver canal de YouTube ↗</a>
+      <div class="video-grid">
+        <div class="video-item">
+          <a class="video-card" href="https://youtu.be/8PaWL5b3CgA" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/8PaWL5b3CgA/hqdefault.jpg" alt="César San Martín" loading="lazy">
+            <div class="video-play"><svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C56 0 34 0 34 0S12 0 7.5 1.7a8.5 8.5 0 0 0-6 6C0 12.1 0 24 0 24s0 11.9 1.5 16.3a8.5 8.5 0 0 0 6 6C12 48 34 48 34 48s22 0 26.5-1.7a8.5 8.5 0 0 0 6-6C68 35.9 68 24 68 24s0-11.9-1.5-16.3z" fill="#fff" fill-opacity=".9"/><path d="M27 34l18-10-18-10v20z" fill="#b07253"/></svg></div>
+          </a>
+          <div class="video-caption"><strong>«Largo al factotum» — Il Barbiere di Siviglia · Rossini</strong>Fígaro · César San Martín, barítono</div>
+        </div>
+        <div class="video-item">
+          <a class="video-card" href="https://youtu.be/wZF5JazYLb4" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/wZF5JazYLb4/hqdefault.jpg" alt="César San Martín" loading="lazy">
+            <div class="video-play"><svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C56 0 34 0 34 0S12 0 7.5 1.7a8.5 8.5 0 0 0-6 6C0 12.1 0 24 0 24s0 11.9 1.5 16.3a8.5 8.5 0 0 0 6 6C12 48 34 48 34 48s22 0 26.5-1.7a8.5 8.5 0 0 0 6-6C68 35.9 68 24 68 24s0-11.9-1.5-16.3z" fill="#fff" fill-opacity=".9"/><path d="M27 34l18-10-18-10v20z" fill="#b07253"/></svg></div>
+          </a>
+          <div class="video-caption"><strong>Carmina Burana — Carl Orff</strong>Barítono solista</div>
+        </div>
+        <div class="video-item">
+          <a class="video-card" href="https://youtu.be/0cOsuI2b12Y" target="_blank" rel="noopener">
+            <img src="https://img.youtube.com/vi/0cOsuI2b12Y/hqdefault.jpg" alt="César San Martín" loading="lazy">
+            <div class="video-play"><svg viewBox="0 0 68 48" xmlns="http://www.w3.org/2000/svg"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C56 0 34 0 34 0S12 0 7.5 1.7a8.5 8.5 0 0 0-6 6C0 12.1 0 24 0 24s0 11.9 1.5 16.3a8.5 8.5 0 0 0 6 6C12 48 34 48 34 48s22 0 26.5-1.7a8.5 8.5 0 0 0 6-6C68 35.9 68 24 68 24s0-11.9-1.5-16.3z" fill="#fff" fill-opacity=".9"/><path d="M27 34l18-10-18-10v20z" fill="#b07253"/></svg></div>
+          </a>
+          <div class="video-caption"><strong>Dúo de Silvio y Nedda — Pagliacci · Leoncavallo</strong>Silvio · César San Martín, barítono</div>
+        </div>
       </div>
-      <p style="font-size:12px;color:var(--dim);font-style:italic;">Para añadir vídeos concretos, comparte los enlaces de YouTube que quieras destacar y los incrusto aquí.</p>
+      <div class="video-channel">
+        <p>Más vídeos en el canal de YouTube</p>
+        <a class="btn-outline" href="https://www.youtube.com/@cesarsanmartin.baritono" target="_blank" rel="noopener">Ver canal completo ↗</a>
+      </div>
     </div>
   </div>
-  <div class="inner-page" style="border-top:1px solid var(--line-lt);">
+
+  <!-- FOTOS — FONDO NEGRO -->
+  <div style="background:var(--gray);padding:72px 0;">
     <div class="wrap">
-      <div class="section-label">Fotos</div>
-      <h2 class="section-title">Galería</h2>
-      <div class="gallery-sub">Retratos</div>
+      <div class="section-label" style="color:var(--clay);">Fotos</div>
+      <h2 class="section-title" style="color:var(--white);">Galería</h2>
+      <div class="gallery-sub" style="color:var(--clay-lt);">Retratos</div>
       <div class="gallery-portraits">
         <div class="p"><img src="img/retrato-01.jpg" alt="César San Martín" loading="lazy"></div>
         <div class="p"><img src="img/retrato-02.jpg" alt="César San Martín" loading="lazy"></div>
         <div class="p"><img src="img/retrato-03.jpg" alt="César San Martín" loading="lazy"></div>
+      </div>
+      <div class="gallery-portraits gallery-more" id="gallery-extra">
         <div class="p"><img src="img/retrato-05.jpg" alt="César San Martín" loading="lazy"></div>
         <div class="p"><img src="img/retrato-06.jpg" alt="César San Martín" loading="lazy"></div>
         <div class="p"><img src="img/retrato-07.jpg" alt="César San Martín" loading="lazy"></div>
       </div>
-      <div class="gallery-sub" style="margin-top:40px;">En escena</div>
+      <button class="gallery-toggle-btn" id="gallery-btn" onclick="toggleGallery()">
+        Ver más retratos <span class="arrow">▼</span>
+      </button>
+      <div class="gallery-sub" style="margin-top:40px;color:var(--clay-lt);">En escena</div>
       <div class="gallery-stage">
         <div class="p"><img src="img/escena-01.jpg" alt="En escena" loading="lazy"></div>
         <div class="p"><img src="img/escena-02.jpg" alt="En escena" loading="lazy"></div>
@@ -648,50 +550,47 @@ footer{
   <div class="inner-page">
     <div class="wrap">
       <div class="section-label">Noticias</div>
-      <h2 class="section-title">Últimas novedades</h2>
+      <h2 class="section-title">Entrevistas y más...</h2>
       <div class="news-grid">
 
         <div class="news-card">
+          <div class="news-tag">Nominación</div>
+          <div class="news-date">Abril 2026</div>
+          <div class="news-title">Nominado a los Premios Talía 2026 como Mejor intérprete masculino de lírica</div>
+          <div class="news-excerpt">La Academia de las Artes Escénicas de España nomina a César San Martín en la categoría de Mejor intérprete masculino de lírica por su interpretación en <em>El Vizconde</em>, en la cuarta edición de los Premios Talía.</div>
+          <a class="news-link" href="https://premiostalia.com/nominaciones-premios-talia-2026/" target="_blank" rel="noopener">Ver nominaciones ↗</a>
+        </div>
+
+        <div class="news-card">
+          <div class="news-tag">Vídeo · TV</div>
+          <div class="news-date">2026</div>
+          <div class="news-title">Entrevista en televisión: César San Martín sobre su carrera y La Verbena de la Paloma</div>
+          <div class="news-excerpt">Entrevista en vídeo en la que repasa algunos de los momentos más destacados de su carrera lírica.</div>
+          <a class="news-link" href="https://www.instagram.com/reel/DaLU-cTNASR/" target="_blank" rel="noopener">Ver entrevista ↗</a>
+        </div>
+
+        <div class="news-card">
+          <div class="news-date">Junio 2026</div>
+          <div class="news-title">La Verbena de la Paloma aterriza en el Auditorio de Tenerife con una mirada contemporánea</div>
+          <div class="news-excerpt">El Día de Tenerife recoge la llegada de la producción del Teatro de la Zarzuela al Auditorio de Tenerife, con César San Martín como Julián, cerrando la temporada de Ópera de Tenerife.</div>
+          <a class="news-link" href="https://www.eldia.es/canarias/2026/06/22/verbena-paloma-aterriza-auditorio-tenerife-mirada-contemporanea-cerrar-temporada-opera-131571063.html" target="_blank" rel="noopener">Leer artículo ↗</a>
+        </div>
+
+        <div class="news-card">
           <div class="news-date">Junio 2025</div>
-          <div class="news-title">Entrevista en Opera World: quince años de carrera y <em>La Tabernera del Puerto</em></div>
-          <div class="news-excerpt">En conversación con Daniel Lara, San Martín repasa su trayectoria desde su debut en el Teatro Real hasta sus actuales compromisos, con especial atención al papel de Juan de Eguía en la producción de la Zarzuela.</div>
+          <div class="news-title">Entrevista en Opera World: quince años de carrera y La Tabernera del Puerto</div>
+          <div class="news-excerpt">En conversación con Daniel Lara, San Martín repasa su trayectoria desde su debut en el Teatro Real hasta sus actuales compromisos, con especial atención al papel de Juan de Eguía.</div>
           <a class="news-link" href="https://www.operaworld.es/entrevista-al-baritono-cesar-san-martin/" target="_blank" rel="noopener">Leer entrevista ↗</a>
         </div>
 
         <div class="news-card">
-          <div class="news-date">Noviembre 2024</div>
-          <div class="news-title"><em>Turandot</em> en el Teatro de la Maestranza de Sevilla</div>
-          <div class="news-excerpt">César San Martín participa en la nueva producción de Turandot de Puccini en el Teatro de la Maestranza de Sevilla, una de las referencias de la ópera en España.</div>
-          <a class="news-link" href="https://www.operabase.com/cesar-san-martin-a3577/es" target="_blank" rel="noopener">Ver en Operabase ↗</a>
-        </div>
-
-        <div class="news-card">
           <div class="news-date">2022</div>
-          <div class="news-title">Protagonista del estreno de <em>Policías y ladrones</em> en el Teatro de la Zarzuela</div>
-          <div class="news-excerpt">San Martín asumió en último momento el papel principal de esta nueva zarzuela encargada al compositor Tomás Marco, en un estreno largamente esperado que había sido cancelado en dos ocasiones anteriores.</div>
+          <div class="news-title">Protagonista del estreno de Policías y ladrones en el Teatro de la Zarzuela</div>
+          <div class="news-excerpt">San Martín asumió en último momento el papel principal de esta nueva zarzuela de Tomás Marco, en un estreno largamente esperado que había sido cancelado en dos ocasiones anteriores.</div>
           <a class="news-link" href="https://www.plateamagazine.com/noticias/14117-cesar-san-martin-sustituye-a-manuel-lanza-como-protagonista-del-estreno-de-policias-y-ladrones-en-la-zarzuela" target="_blank" rel="noopener">Leer noticia ↗</a>
         </div>
 
-        <div class="news-card">
-          <div class="news-date">2022</div>
-          <div class="news-title"><em>Luisa Fernanda</em> en el Palacio de Festivales de Cantabria — nueva producción</div>
-          <div class="news-excerpt">Nueva producción de la célebre zarzuela de Moreno Torroba en el Palacio de Festivales de Cantabria, con César San Martín en el papel de Vidal Hernando.</div>
-          <a class="news-link" href="https://www.operabase.com/cesar-san-martin-a3577/es" target="_blank" rel="noopener">Ver en Operabase ↗</a>
-        </div>
 
-        <div class="news-card">
-          <div class="news-date">2016</div>
-          <div class="news-title"><em>Goyescas</em> en el Centenario de Granados — Florencia y Nápoles</div>
-          <div class="news-excerpt">Con motivo del centenario de la muerte de Enrique Granados, San Martín interpretó Goyescas en la Ópera de Florencia y el Teatro San Carlo de Nápoles, dos de los teatros más prestigiosos de Italia.</div>
-          <a class="news-link" href="https://biamartists.com/cesar-san-martin-biografia" target="_blank" rel="noopener">Leer más ↗</a>
-        </div>
-
-        <div class="news-card">
-          <div class="news-date">2014</div>
-          <div class="news-title">Entrevista en Codalario: «La zarzuela me emociona tanto que el corazón prevalece sobre la técnica»</div>
-          <div class="news-excerpt">Una de las entrevistas más completas sobre su visión artística, su vinculación a la zarzuela y el momento de su carrera en aquel momento de consolidación.</div>
-          <a class="news-link" href="https://www.codalario.com/cesar-san-martin/entrevistas/cesar-san-martin--baritono-la-zarzuela-me-emociona-tanto-que-a-veces-siento-que-el-corazon-prevalece-sobre-la-tecnica_2282_4_5330_0_1_in.html" target="_blank" rel="noopener">Leer entrevista ↗</a>
-        </div>
 
       </div>
     </div>
@@ -704,34 +603,78 @@ footer{
   <div class="inner-page">
     <div class="wrap">
       <div class="section-label">Prensa</div>
-      <h2 class="section-title">Críticas y reseñas</h2>
+      <h2 class="section-title">Críticas · Temporada 2025/26</h2>
+
       <div class="press-item">
-        <div class="press-source">Teatro Real</div>
-        <blockquote>Dos décadas sobre los grandes escenarios líricos españoles, desde Il barbiere di Siviglia hasta Tristan und Isolde, pasando por Les Huguenots y La traviata.</blockquote>
+        <div><div class="press-source">Codalario</div><div class="press-meta">Pericca e Varrone · Jul 2026</div></div>
+        <blockquote>la mezzo Sandra Ferrández y el barítono César San Martín. Ambos acreditaron desenvoltura, dominio de las tablas y plena compenetración interpretativa, además de factura musical y acentos intencionados, tanto en arias y dúos, como en los recitativos, tan fundamentales en este contexto.</blockquote>
       </div>
+
       <div class="press-item">
-        <div class="press-source">Opera World · Jun 2025</div>
-        <blockquote>Uno de los intérpretes más versátiles y destacados de su generación, que este año celebra además sus primeros quince años de carrera como cantante.</blockquote>
+        <div><div class="press-source">Bachtrack</div><div class="press-meta">La Verbena de la Paloma · Jun 2026</div></div>
+        <blockquote>Nos gustó la prestación del Julián de César San Martín, de profunda y timbrada voz de barítono, quien supo resaltar los momentos más emotivos de su papel: desde los iracundos exabruptos contra sus celos "mal reprimidos" a sus confesiones de dolor y cariño por su novia Susana</blockquote>
       </div>
+
       <div class="press-item">
-        <div class="press-source">Platea Magazine</div>
-        <blockquote>El excelente barítono César San Martín, muy buen conocedor del repertorio.</blockquote>
+        <div><div class="press-source">Ópera Actual</div><div class="press-meta">La Verbena de la Paloma · Jun 2026</div></div>
+        <blockquote>El barítono César San Martín, en el papel del celoso Julián, fue, sin duda, el gran protagonista de la representación gracias a una sólida caracterización dramática y una buena proyección vocal.</blockquote>
       </div>
+
       <div class="press-item">
-        <div class="press-source">Jordi Lledó · Platea Magazine</div>
-        <blockquote>El barítono no solo cantó de forma heroica, sino que hizo un papel teatral digno de admirar. Hizo una versión bastante interesante del número musical, comúnmente conocido como «la canción de Juan de León».</blockquote>
+        <div><div class="press-source">Pro Ópera</div><div class="press-meta">La Revoltosa · Abr 2026</div></div>
+        <blockquote>Por su parte, el barítono César San Martín cumplió con creces como Felipe, mostrando una sólida emisión y una voz bien timbrada. Si bien se ajustó al perfil castizo del personaje, supo darle un toque mucho más romántico, escénica y vocalmente.</blockquote>
       </div>
+
       <div class="press-item">
-        <div class="press-source">Codalario</div>
-        <blockquote>La zarzuela me emociona tanto que a veces siento que el corazón prevalece sobre la técnica.</blockquote>
+        <div><div class="press-source">Scherzo</div><div class="press-meta">La Revoltosa · Abr 2026</div></div>
+        <blockquote>Felipe, al que dio vida César San Martín con variedad de matices y una bien asentada voz baritonal.</blockquote>
       </div>
+
       <div class="press-item">
-        <div class="press-source">Lyric Art · BIAM</div>
-        <blockquote>Voz cálida, línea de canto limpia y una notable capacidad para adaptarse a personajes de naturaleza muy distinta.</blockquote>
+        <div><div class="press-source">Opera World</div><div class="press-meta">La Revoltosa · Abr 2026</div></div>
+        <blockquote>El barítono César San Martín, debutante en el personaje de Felipe, brilló con su bien timbrada voz que maneja con soltura y una interpretación matizada del personaje.</blockquote>
       </div>
-      <div class="press-placeholder">
-        Las próximas críticas se irán añadiendo desde la conversación CRÍTICAS del proyecto.
+
+      <div class="press-item">
+        <div><div class="press-source">El Nuevo Siglo</div><div class="press-meta">Bogotá · Feb 2026</div></div>
+        <blockquote>Sin duda, la actuación más lograda, por vocalización y dicción, fue la del barítono César San Martín.</blockquote>
       </div>
+
+      <div class="press-item">
+        <div><div class="press-source">Opera World</div><div class="press-meta">Goyescas · Ene–Feb 2026</div></div>
+        <blockquote>Completaba el reparto el buen barítono César San Martín que hizo un Paquiro muy creíble. En todo momento estuvo en su papel tanto en la parte canora como en la interpretación escénica. Siempre muy alejado de cualquier amaneramiento, personaje popular el del gran torero que supo transmitir con sobriedad y elegancia la personalidad que Periquet y Granados atribuyen al majo, popular, pero contenido. Sobrio y elegante. Muy positiva su actuación.</blockquote>
+      </div>
+
+      <div class="press-item">
+        <div><div class="press-source">Codalario</div><div class="press-meta">Goyescas · Ene–Feb 2026</div></div>
+        <blockquote>De libro el torero Paquiro, arrogante y ardoroso, además de sólido vocalmente, del barítono César San Martín.</blockquote>
+      </div>
+
+      <div class="press-item">
+        <div><div class="press-source">Pro Ópera</div><div class="press-meta">Goyescas · Ene–Feb 2026</div></div>
+        <blockquote>el fanfarrón y provocador torero Paquito del siempre solvente barítono Cesar San Martín</blockquote>
+      </div>
+
+      <div class="press-item">
+        <div><div class="press-source">Ópera Actual</div><div class="press-meta">La Verbena de la Paloma · May 2026</div></div>
+        <blockquote>César San Martín encarnó un Julián atormentado, de emisión franca y presencia rotunda, muy destacado en sus intervenciones.</blockquote>
+      </div>
+
+      <div class="press-item">
+        <div><div class="press-source">Platea Magazine</div><div class="press-meta">Orlando furioso · Nov 2025</div></div>
+        <blockquote>el madrileño Cesar San Martín (Astolfo) enseñó la voz más amplia y aunque es un barítono y no un bajo pasó los graves con suficiencia y mostró un gusto exquisito en sus frases.</blockquote>
+      </div>
+
+      <div class="press-item">
+        <div><div class="press-source">Bachtrack</div><div class="press-meta">Barbieri · Sep 2025</div></div>
+        <blockquote>El barítono César San Martín se suelta la melena —figurada y literalmente— y brinda una tronchante creación cómica sin sacrificar la musicalidad. Su interpretación del número "Es chiquitito, blanco y rubito" es prodigiosa en este sentido: mientras se somete a un tratamiento de belleza rayano en la tortura, víctima de cada vez más muecas y espasmos, no pierde la línea de canto y resuelve pasajes ornamentados, saltos y descensos al grave, exhibiendo un tono homogéneo en toda su extensión y dotando de intención a las palabras.</blockquote>
+      </div>
+
+      <div class="press-item">
+        <div><div class="press-source">Codalario</div><div class="press-meta">Barbieri · Sep 2025</div></div>
+        <blockquote>si los cuatro intérpretes en su doble cometido alcanzaron una gran altura, es justo destacar, que la bandera la colocó César San Martín, como absoluto dominador de toda la velada. El barítono madrileño sumó a su templanza canora y solidez musical una hilarante, genial, creación «in travesti» de la Baronesa en Gato por liebre y un Don Alfonso en El Vizconde, paródico, pero sin excesos, en su ridícula afectación como custodio de la estirpe Vivar.</blockquote>
+      </div>
+
     </div>
   </div>
 </div>
@@ -744,47 +687,24 @@ footer{
       <div class="section-label">Contacto</div>
       <div class="contact-grid">
         <div>
-          <p class="contact-intro">¿Organizas un teatro, festival o concierto?</p>
-          <p class="contact-note">Escríbenos a través de este formulario para consultas profesionales, contrataciones y prensa. Nos pondremos en contacto contigo a la mayor brevedad.</p>
-          <div style="margin-top:32px;">
-            <p class="contact-note">También puedes encontrarme en:</p>
-            <p style="margin-top:12px;"><a href="https://instagram.com/cesarsanmartin.baritono" target="_blank" style="font-size:12px;color:var(--clay);letter-spacing:.06em;">Instagram @cesarsanmartin.baritono ↗</a></p>
-            <p style="margin-top:6px;"><a href="https://www.youtube.com/@cesarsanmartin.baritono" target="_blank" style="font-size:12px;color:var(--clay);letter-spacing:.06em;">YouTube @cesarsanmartin.baritono ↗</a></p>
-          </div>
-        </div>
-        <div>
           <form action="https://formspree.io/f/TUCODIGO" method="POST">
-            <div class="form-field">
-              <label>Nombre</label>
-              <input type="text" name="nombre" required placeholder="Tu nombre">
-            </div>
-            <div class="form-field">
-              <label>Email</label>
-              <input type="email" name="email" required placeholder="tu@email.com">
-            </div>
-            <div class="form-field">
-              <label>Asunto</label>
-              <select name="asunto">
-                <option value="">Selecciona el motivo</option>
-                <option value="contratacion">Contratación artística</option>
-                <option value="prensa">Prensa / Entrevista</option>
-                <option value="otro">Otro</option>
-              </select>
-            </div>
-            <div class="form-field">
-              <label>Mensaje</label>
-              <textarea name="mensaje" required placeholder="Escribe tu mensaje aquí…"></textarea>
-            </div>
+            <div class="form-field"><label>Nombre</label><input type="text" name="nombre" required placeholder="Tu nombre"></div>
+            <div class="form-field"><label>Email</label><input type="email" name="email" required placeholder="tu@email.com"></div>
+            <div class="form-field"><label>Asunto</label><select name="asunto"><option value="">Selecciona el motivo</option><option value="contratacion">Contratación artística</option><option value="prensa">Prensa / Entrevista</option><option value="otro">Otro</option></select></div>
+            <div class="form-field"><label>Mensaje</label><textarea name="mensaje" required placeholder="Escribe tu mensaje aquí…"></textarea></div>
             <button type="submit" class="form-submit">Enviar mensaje</button>
           </form>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:20px;justify-content:center;">
+          <div class="section-label">También puedes encontrarme en</div>
+          <a href="https://instagram.com/cesarsanmartin.baritono" target="_blank" rel="noopener" style="font-size:15px;color:var(--clay);letter-spacing:.06em;border-bottom:1px solid var(--line-lt);padding-bottom:16px;">Instagram @cesarsanmartin.baritono ↗</a>
+          <a href="https://www.youtube.com/@cesarsanmartin.baritono" target="_blank" rel="noopener" style="font-size:15px;color:var(--clay);letter-spacing:.06em;border-bottom:1px solid var(--line-lt);padding-bottom:16px;">YouTube @cesarsanmartin.baritono ↗</a>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-
-<!-- FOOTER -->
 <footer>
   <div class="wrap">
     <div class="foot-inner">
@@ -800,31 +720,32 @@ footer{
 </footer>
 
 <script>
-// Accordion años
-document.addEventListener('click', function(e) {
-  const toggle = e.target.closest('.year-toggle');
-  if (toggle) {
-    const group = toggle.closest('.year-group');
-    group.classList.toggle('open');
-  }
-});
+function toggleGallery(){
+  const extra = document.getElementById('gallery-extra');
+  const btn = document.getElementById('gallery-btn');
+  const isOpen = extra.classList.toggle('open');
+  btn.classList.toggle('open');
+  btn.querySelector('.arrow').textContent = isOpen ? '▲' : '▼';
+  const span = btn.childNodes[0];
+  span.textContent = isOpen ? 'Ver menos ' : 'Ver más retratos ';
+}
 
-function navigate(pageId) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-  const page = document.getElementById('page-' + pageId);
-  if (page) page.classList.add('active');
-  const link = document.querySelector('.nav-links a[data-page="' + pageId + '"]');
-  if (link) link.classList.add('active');
+function navigate(pageId){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+  const page=document.getElementById('page-'+pageId);
+  if(page)page.classList.add('active');
+  const link=document.querySelector('.nav-links a[data-page="'+pageId+'"]');
+  if(link)link.classList.add('active');
   window.scrollTo({top:0,behavior:'smooth'});
 }
-document.querySelectorAll('a[data-page]').forEach(a => {
-  a.addEventListener('click', e => {
-    e.preventDefault();
-    navigate(a.dataset.page);
-  });
+document.querySelectorAll('a[data-page]').forEach(a=>{
+  a.addEventListener('click',e=>{e.preventDefault();navigate(a.dataset.page);});
+});
+document.addEventListener('click',function(e){
+  const toggle=e.target.closest('.year-toggle');
+  if(toggle){toggle.closest('.year-group').classList.toggle('open');}
 });
 </script>
-
 </body>
 </html>
