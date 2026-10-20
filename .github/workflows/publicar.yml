@@ -1,0 +1,37 @@
+# Publica la web en GitHub Pages.
+# Se ejecuta: 1) cada vez que se suben cambios, 2) todos los días a las 06:07 (hora de Madrid en invierno, 07:07 en verano)
+# para recoger lo último de YouTube e Instagram, y 3) a mano desde la pestaña «Actions» → «Publicar la web» → «Run workflow».
+name: Publicar la web
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "7 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.despliegue.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generar la web con las novedades de las redes
+        run: python3 _fuente/build.py --redes
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - id: despliegue
+        uses: actions/deploy-pages@v4
