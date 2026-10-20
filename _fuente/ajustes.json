@@ -1,0 +1,14 @@
+{
+  "_nota": "Ajustes generales de la web. 'behold_feed' es la dirección JSON del feed de Instagram creado en behold.so (https://feeds.behold.so/XXXX); mientras esté vacía, la web no muestra Instagram en las novedades automáticas.",
+  "dominio": "https://www.cesarsanmartin.com",
+  "nombre": "César San Martín",
+  "nombre_corto": "César S. Martín",
+  "youtube_canal_id": "UCdV48hOdTTSO1s6xAVwP-wQ",
+  "youtube_url": "https://www.youtube.com/@cesarsanmartin.baritono",
+  "instagram_usuario": "cesarsanmartin.baritono",
+  "instagram_url": "https://www.instagram.com/cesarsanmartin.baritono/",
+  "behold_feed": "",
+  "formspree": "https://formspree.io/f/xeeyejdd",
+  "max_youtube": 6,
+  "max_instagram": 6
+}

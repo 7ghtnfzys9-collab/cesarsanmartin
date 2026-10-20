@@ -1,0 +1,97 @@
+/* ============================================================
+   Añadidos de la versión multipágina (oct. 2026).
+   estilos-base.css es el CSS original de la web, sin tocar.
+   ============================================================ */
+
+/* Accesibilidad */
+.saltar{position:absolute;left:-9999px;top:0;background:var(--clay);color:var(--white);padding:8px 14px;z-index:200;font-size:13px;}
+.saltar:focus{left:8px;top:8px;}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+:focus-visible{outline:2px solid var(--clay);outline-offset:2px;}
+h1.section-title,h2.section-title{font-weight:100;}
+h2.section-label,h3.section-label{font-weight:300;}
+
+/* Menú: ahora son enlaces reales */
+.nav-scroll{display:flex;align-items:center;overflow:hidden;flex:1;min-width:0;}
+.lang-btn{display:inline-block;line-height:1.4;}
+
+/* Textos sueltos que antes iban con estilos en línea */
+.home-bio-txt{font-size:16px;line-height:1.9;color:#555;}
+.home-section.dark .home-bio-txt{color:#c8c2b8;}
+.dim{color:var(--dim);}
+
+/* Bloque Instagram de la portada */
+.insta-cta{background:var(--gray);padding:56px 0;border-top:1px solid var(--line);color:var(--white);}
+.insta-cta-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;}
+.insta-cta .section-label{color:var(--clay);}
+.insta-cta .section-title{color:var(--white);margin-bottom:12px;}
+.insta-cta p{font-size:15px;color:#b8b2a8;line-height:1.8;}
+
+/* Cinta de citas de prensa */
+.press-marquee{background:var(--gray);overflow:hidden;border-top:1px solid var(--line);padding:20px 0;}
+.press-marquee .marquee-track{gap:64px;}
+.press-marquee .cita{font-style:italic;color:#b8b2a8;font-size:15px;letter-spacing:.02em;}
+.press-marquee .cita em{font-style:normal;color:var(--clay);font-size:12px;letter-spacing:.08em;}
+.press-marquee .cita-sep{color:var(--line);font-size:20px;}
+
+/* Biografía: columna oscura */
+.bio-dark p{color:#c8c2b8;}
+
+/* Agenda: años desplegables con <details> (funcionan sin JavaScript) */
+.year-group summary{list-style:none;}
+.year-group summary::-webkit-details-marker{display:none;}
+.year-group .year-body{display:block;}
+.year-group[open] .year-arrow{transform:rotate(180deg);}
+.year-group:last-of-type{border-bottom:1px solid var(--line-lt);}
+.agenda-prox{margin-bottom:64px;border-top:1px solid var(--line-lt);}
+.agenda-archivo{margin-bottom:0;padding-bottom:6px;}
+.sin-fechas{padding:18px 0;color:var(--dim);}
+
+/* Vídeos: miniatura que se convierte en reproductor al pulsar */
+.yt-btn{all:unset;cursor:pointer;position:absolute;inset:0;display:block;}
+.yt-btn:focus-visible{outline:2px solid var(--clay);outline-offset:2px;}
+.yt-btn img{width:100%;height:100%;object-fit:cover;}
+.yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0;}
+.video-name{display:block;font-size:15px;font-weight:300;color:var(--gray);margin-bottom:2px;line-height:1.45;}
+.video-caption span{display:block;}
+.video-cred{font-size:12px;margin-top:2px;}
+.video-yt{display:inline-block;margin-top:6px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);}
+.video-yt:hover{color:var(--clay-lt);}
+.video-seccion{margin-bottom:56px;scroll-margin-top:80px;}
+.video-h2{margin-bottom:8px;}
+.video-intro{font-size:15px;color:var(--dim);margin-bottom:24px;}
+@media(min-width:701px) and (max-width:900px){.video-grid{grid-template-columns:repeat(2,1fr);}}
+
+/* Galería en fondo oscuro */
+.fotos-dark{background:var(--gray);padding:72px 0;color:var(--white);}
+.fotos-dark .section-title{color:var(--white);}
+.gallery-sub2{margin-top:40px;color:var(--clay-lt);}
+
+/* Novedades de redes (YouTube + Instagram, se regeneran solas) */
+.feed-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+@media(max-width:860px){.feed-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:560px){.feed-grid{grid-template-columns:1fr;}}
+.feed-card{border:1px solid var(--line-lt);display:flex;flex-direction:column;background:var(--white);}
+.feed-media{position:relative;display:block;aspect-ratio:16/9;overflow:hidden;background:#1a1a1a;}
+.feed-instagram .feed-media{aspect-ratio:1/1;}
+.feed-media img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease;}
+.feed-media:hover img{transform:scale(1.04);}
+.feed-play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,.2);}
+.feed-play svg{width:46px;height:46px;filter:drop-shadow(0 2px 8px rgba(0,0,0,.5));}
+.feed-body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.feed-meta{display:flex;justify-content:space-between;gap:8px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--clay);}
+.feed-meta time{color:var(--dim);}
+.feed-title{font-size:15px;line-height:1.55;color:var(--gray);overflow-wrap:anywhere;}
+.feed-vacio{color:var(--dim);font-size:15px;}
+.feed-vacio a{color:var(--clay);border-bottom:1px solid var(--clay);}
+.feed-home .feed-grid{margin-bottom:8px;}
+
+/* Prensa */
+.press-item{margin:0;}
+.press-source{font-style:normal;display:block;}
+.press-nota{font-size:14px;color:var(--dim);margin:-28px 0 28px;font-style:italic;}
+
+/* Contacto */
+.contact-side{display:flex;flex-direction:column;gap:16px;}
+.contact-link{font-size:15px;color:var(--clay);letter-spacing:.06em;border-bottom:1px solid var(--line-lt);padding-bottom:16px;}
+.contact-link:hover{color:var(--clay-lt);}

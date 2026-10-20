@@ -1,0 +1,42 @@
+{
+  "_nota": "Vídeos públicos del canal. 'grupo' = dónde se cantó (concierto / opera = producción escénica de ópera / zarzuela = producción escénica de zarzuela), el mismo criterio que los colores de las miniaturas. Un vídeo nuevo: añadir un bloque arriba de su grupo. Los datos salen del LEEME de redes (confirmados por César); lo que no se sabe se deja vacío.",
+  "videos": [
+    {"id": "w9p7X63StXA", "grupo": "concierto", "obra": "Rigoletto", "compositor": "Verdi", "pieza": "«Cortigiani, vil razza dannata»", "papel": "Rigoletto",
+     "lugar": "Auditorio Edgar Neville, Málaga", "fecha": "2026-10-16", "anio": "2026",
+     "creditos_es": "Orquesta Filarmónica de Málaga · Rafael Sánchez Araña, director", "creditos_en": "Málaga Philharmonic Orchestra · Rafael Sánchez Araña, conductor"},
+    {"id": "8-UqP5XhIwg", "grupo": "concierto", "obra": "Adriana Lecouvreur", "compositor": "Cilea", "pieza": "«Ecco il monologo»", "papel": "Michonnet",
+     "lugar": "Auditorio Edgar Neville, Málaga", "fecha": "2026-10-16", "anio": "2026",
+     "creditos_es": "Orquesta Filarmónica de Málaga · Rafael Sánchez Araña, director", "creditos_en": "Málaga Philharmonic Orchestra · Rafael Sánchez Araña, conductor"},
+    {"id": "wZF5JazYLb4", "grupo": "concierto", "obra": "Carmina Burana", "compositor": "Orff", "pieza": "«Estuans interius ira vehementi»", "papel": "",
+     "lugar": "Auditorio Alfredo Kraus, Las Palmas de Gran Canaria", "fecha": "2024-06-01", "anio": "2024",
+     "creditos_es": "Orquesta Sinfónica de Las Palmas (XXV aniversario) · Rafael Sánchez Araña, director", "creditos_en": "Las Palmas Symphony Orchestra (25th anniversary) · Rafael Sánchez Araña, conductor"},
+    {"id": "YG3Zi1koHh0", "grupo": "concierto", "obra": "El canastillo de fresas", "compositor": "Guerrero", "pieza": "«Sálvame tú»", "papel": "Andrés",
+     "lugar": "Plaza Mayor, Madrid", "fecha": "", "anio": "2014",
+     "creditos_es": "Banda Municipal de Madrid", "creditos_en": "Madrid Municipal Band"},
+
+    {"id": "0cOsuI2b12Y", "grupo": "opera", "obra": "Pagliacci", "compositor": "Leoncavallo", "pieza": "Dúo de Nedda y Silvio «Silvio! A quest'ora»", "pieza_en": "Nedda and Silvio duet «Silvio! A quest'ora»", "papel": "Silvio",
+     "lugar": "A Coruña", "fecha": "", "anio": "2021", "creditos_es": "", "creditos_en": ""},
+    {"id": "wt6PzQREWX4", "grupo": "opera", "obra": "Zaide", "compositor": "Mozart", "pieza": "«Wer hungrig bei der Tafel sitzt»", "papel": "Osmin",
+     "lugar": "", "fecha": "", "anio": "2009", "creditos_es": "", "creditos_en": ""},
+    {"id": "8PaWL5b3CgA", "grupo": "opera", "obra": "Il barbiere di Siviglia", "compositor": "Rossini", "pieza": "«Largo al factotum»", "papel": "Figaro",
+     "lugar": "Palma", "fecha": "", "anio": "2015", "creditos_es": "", "creditos_en": ""},
+    {"id": "EHUY_j4kPiU", "grupo": "opera", "obra": "Il barbiere di Siviglia", "compositor": "Rossini", "pieza": "«Largo al factotum»", "papel": "Figaro",
+     "lugar": "Teatro Real, Madrid", "fecha": "", "anio": "2008",
+     "creditos_es": "Philippe Bach, director", "creditos_en": "Philippe Bach, conductor"},
+    {"id": "Iqf5GzvKB4A", "grupo": "opera", "obra": "Il barbiere di Siviglia", "compositor": "Rossini", "pieza": "«All'idea di quel metallo»", "papel": "Figaro",
+     "lugar": "Teatro Real, Madrid", "fecha": "", "anio": "2008",
+     "creditos_es": "Philippe Bach, director", "creditos_en": "Philippe Bach, conductor"},
+
+    {"id": "iqoylSoTA7A", "grupo": "zarzuela", "obra": "Luisa Fernanda", "compositor": "Moreno Torroba", "pieza": "Romanza de Vidal «Luche la fe por el triunfo»", "pieza_en": "Vidal's romanza «Luche la fe por el triunfo»", "papel": "Vidal",
+     "lugar": "Teatro de la Zarzuela, Madrid", "fecha": "", "anio": "2021",
+     "creditos_es": "Karel Mark Chichon, director", "creditos_en": "Karel Mark Chichon, conductor"},
+    {"id": "IR6FdDSMzVY", "grupo": "zarzuela", "obra": "Benamor", "compositor": "Pablo Luna", "pieza": "«País de sol»", "papel": "Juan de León",
+     "lugar": "", "fecha": "", "anio": "2021", "creditos_es": "", "creditos_en": ""},
+    {"id": "noV8gwQsLi8", "grupo": "zarzuela", "obra": "La del Soto del Parral", "compositor": "Soutullo y Vert", "pieza": "Romanza de Germán «Ya mis horas felices»", "pieza_en": "Germán's romanza «Ya mis horas felices»", "papel": "Germán",
+     "lugar": "", "fecha": "", "anio": "2010", "creditos_es": "", "creditos_en": ""},
+    {"id": "IKlazKh9OMI", "grupo": "zarzuela", "obra": "Luisa Fernanda", "compositor": "Moreno Torroba", "pieza": "Dúo de Luisa Fernanda y Vidal «En mi tierra extremeña»", "pieza_en": "Duet of Luisa Fernanda and Vidal «En mi tierra extremeña»", "papel": "Vidal",
+     "lugar": "", "fecha": "", "anio": "2011", "creditos_es": "", "creditos_en": ""},
+    {"id": "eRobDUY1pDA", "grupo": "zarzuela", "obra": "Luisa Fernanda", "compositor": "Moreno Torroba", "pieza": "Romanza de Vidal «Luche la fe por el triunfo»", "pieza_en": "Vidal's romanza «Luche la fe por el triunfo»", "papel": "Vidal",
+     "lugar": "", "fecha": "", "anio": "2011", "creditos_es": "", "creditos_en": ""}
+  ]
+}

@@ -1,0 +1,6 @@
+# La carpeta docs/ la genera _fuente/build.py; GitHub la vuelve a crear en cada publicación.
+docs/
+__pycache__/
+.DS_Store
+._*
+to delete/
