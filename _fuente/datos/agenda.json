@@ -21,13 +21,33 @@
   },
   {
     "anio": 2026,
+    "fecha_texto": "16 oct",
+    "inicio": "2026-10-16",
+    "fin": "2026-10-16",
+    "obra": "Concierto con la Orquesta Filarmónica de Málaga",
+    "papel_es": "Barítono solista",
+    "papel_en": "Baritone soloist",
+    "lugar": "Auditorio Edgar Neville, Málaga"
+  },
+  {
+    "anio": 2026,
+    "fecha_texto": "24 sep – 4 oct",
+    "inicio": "2026-09-24",
+    "fin": "2026-10-04",
+    "obra": "La Verbena de la Paloma",
+    "papel_es": "Julián",
+    "papel_en": "Julián",
+    "lugar": "Teatro de la Zarzuela, Madrid"
+  },
+  {
+    "anio": 2026,
     "fecha_texto": "30 jul – 2 ago",
     "inicio": "2026-07-30",
     "fin": "2026-08-02",
     "obra": "La Tabernera del Puerto",
     "papel_es": "Juan de Eguía",
     "papel_en": "Juan de Eguía (role)",
-    "lugar": "Teatro Colón, Bogotá"
+    "lugar": "Teatro Mayor Julio Mario Santo Domingo, Bogotá"
   },
   {
     "anio": 2026,
@@ -35,8 +55,8 @@
     "inicio": "2026-07-10",
     "fin": "2026-07-11",
     "obra": "Pericca e Varrone — A. Scarlatti",
-    "papel_es": "",
-    "papel_en": "",
+    "papel_es": "Varrone",
+    "papel_en": "Varrone",
     "lugar": "Festival Ópera a Quemarropa, Aranjuez"
   },
   {
@@ -81,18 +101,28 @@
   },
   {
     "anio": 2026,
-    "fecha_texto": "28 feb",
-    "inicio": "2026-02-28",
-    "fin": "2026-02-28",
+    "fecha_texto": "5 mar",
+    "inicio": "2026-03-05",
+    "fin": "2026-03-05",
     "obra": "El vizconde / Gato por liebre — Barbieri",
-    "papel_es": "",
-    "papel_en": "",
+    "papel_es": "Don Alfonso / La Baronesa",
+    "papel_en": "Don Alfonso / La Baronesa",
+    "lugar": "Teatro Metropolitano, Medellín"
+  },
+  {
+    "anio": 2026,
+    "fecha_texto": "28 feb – 1 mar",
+    "inicio": "2026-02-28",
+    "fin": "2026-03-01",
+    "obra": "El vizconde / Gato por liebre — Barbieri",
+    "papel_es": "Don Alfonso / La Baronesa",
+    "papel_en": "Don Alfonso / La Baronesa",
     "lugar": "Teatro Mayor Julio Mario Santo Domingo, Bogotá"
   },
   {
     "anio": 2026,
-    "fecha_texto": "31 ene – 1 feb",
-    "inicio": "2026-01-31",
+    "fecha_texto": "24 ene – 1 feb",
+    "inicio": "2026-01-24",
     "fin": "2026-02-01",
     "obra": "Goyescas / El retablo de Maese Pedro",
     "papel_es": "Paquiro",
@@ -108,6 +138,46 @@
     "papel_es": "Astolfo",
     "papel_en": "Astolfo",
     "lugar": "Teatro Campoamor, Oviedo"
+  },
+  {
+    "anio": 2025,
+    "fecha_texto": "23–24 sep",
+    "inicio": "2025-09-23",
+    "fin": "2025-09-24",
+    "obra": "El vizconde / Gato por liebre — Barbieri",
+    "papel_es": "Don Alfonso / La Baronesa",
+    "papel_en": "Don Alfonso / La Baronesa",
+    "lugar": "Fundación Juan March, Madrid"
+  },
+  {
+    "anio": 2025,
+    "fecha_texto": "24 jul",
+    "inicio": "2025-07-24",
+    "fin": "2025-07-24",
+    "obra": "Pierre de Médicis — Poniatowski",
+    "papel_es": "Julien de Médicis",
+    "papel_en": "Julien de Médicis",
+    "lugar": "Festival Rossini in Wildbad, Bad Wildbad (Alemania)"
+  },
+  {
+    "anio": 2025,
+    "fecha_texto": "4 jul",
+    "inicio": "2025-07-04",
+    "fin": "2025-07-04",
+    "obra": "Pierre de Médicis — Poniatowski (en concierto)",
+    "papel_es": "Julien de Médicis",
+    "papel_en": "Julien de Médicis",
+    "lugar": "Royal Opera Festival, Filharmonia Krakowska, Cracovia (Polonia)"
+  },
+  {
+    "anio": 2025,
+    "fecha_texto": "27–28 jun",
+    "inicio": "2025-06-27",
+    "fin": "2025-06-28",
+    "obra": "Concierto «Hispański»",
+    "papel_es": "Barítono solista",
+    "papel_en": "Baritone soloist",
+    "lugar": "Filharmonia Krakowska, Cracovia (Polonia)"
   },
   {
     "anio": 2025,
@@ -131,13 +201,13 @@
   },
   {
     "anio": 2025,
-    "fecha_texto": "23–24 sep",
-    "inicio": "2025-09-23",
-    "fin": "2025-09-24",
-    "obra": "El vizconde / Gato por liebre — Barbieri",
-    "papel_es": "",
-    "papel_en": "",
-    "lugar": "Fundación Juan March, Madrid"
+    "fecha_texto": "21–22 feb",
+    "inicio": "2025-02-21",
+    "fin": "2025-02-22",
+    "obra": "Romance de Puerto — Sorozábal",
+    "papel_es": "Juan de Eguía",
+    "papel_en": "Juan de Eguía",
+    "lugar": "Palacete del Embarcadero, Santander"
   },
   {
     "anio": 2025,
@@ -150,14 +220,14 @@
     "lugar": "Teatro de la Zarzuela, Madrid"
   },
   {
-    "anio": 2025,
-    "fecha_texto": "2025",
-    "inicio": null,
-    "fin": null,
-    "obra": "Carmen — Bizet",
-    "papel_es": "Le Dancaïre",
-    "papel_en": "Le Dancaïre",
-    "lugar": "AGAO, Pamplona"
+    "anio": 2024,
+    "fecha_texto": "30 nov – 1 dic",
+    "inicio": "2024-11-30",
+    "fin": "2024-12-01",
+    "obra": "Madama Butterfly — Puccini",
+    "papel_es": "Sharpless",
+    "papel_en": "Sharpless",
+    "lugar": "Centro Cultural Amaia, Irun (Asociación Lírica Luis Mariano)"
   },
   {
     "anio": 2024,
@@ -165,19 +235,49 @@
     "inicio": "2024-11-07",
     "fin": "2024-11-16",
     "obra": "Turandot — Puccini",
-    "papel_es": "",
-    "papel_en": "",
+    "papel_es": "Un mandarín",
+    "papel_en": "A Mandarin",
     "lugar": "Teatro de la Maestranza, Sevilla"
+  },
+  {
+    "anio": 2024,
+    "fecha_texto": "5–12 oct",
+    "inicio": "2024-10-05",
+    "fin": "2024-10-12",
+    "obra": "Il barbiere di Siviglia — Rossini",
+    "papel_es": "Fígaro",
+    "papel_en": "Fígaro",
+    "lugar": "Teatro Campoamor, Oviedo"
+  },
+  {
+    "anio": 2024,
+    "fecha_texto": "14 ago",
+    "inicio": "2024-08-14",
+    "fin": "2024-08-14",
+    "obra": "Concierto de gala",
+    "papel_es": "Solista",
+    "papel_en": "Soloist",
+    "lugar": "Festival Jan Kiepura, Krynica-Zdrój (Polonia)"
+  },
+  {
+    "anio": 2024,
+    "fecha_texto": "28 jul",
+    "inicio": "2024-07-28",
+    "fin": "2024-07-28",
+    "obra": "El gigante egoísta / Los listos",
+    "papel_es": "Marcone",
+    "papel_en": "Marcone",
+    "lugar": "Teatro Principal, Zamora"
   },
   {
     "anio": 2024,
     "fecha_texto": "29 jun",
     "inicio": "2024-06-29",
     "fin": "2024-06-29",
-    "obra": "Concierto de Zarzuela",
-    "papel_es": "",
-    "papel_en": "",
-    "lugar": "Real Coliseo Carlos III, El Escorial"
+    "obra": "Barbieri 200 Años: Dos Sainetes Picarescos",
+    "papel_es": "Pascual",
+    "papel_en": "Pascual",
+    "lugar": "Real Coliseo de Carlos III, San Lorenzo de El Escorial"
   },
   {
     "anio": 2024,
@@ -211,79 +311,109 @@
   },
   {
     "anio": 2024,
-    "fecha_texto": "2024",
-    "inicio": null,
-    "fin": null,
-    "obra": "Manon — Massenet",
-    "papel_es": "Monsieur de Brétigny",
-    "papel_en": "Monsieur de Brétigny",
-    "lugar": "Teatro Villamarta, Jerez"
-  },
-  {
-    "anio": 2024,
-    "fecha_texto": "2024",
-    "inicio": null,
-    "fin": null,
-    "obra": "Madama Butterfly — Puccini",
-    "papel_es": "Sharpless",
-    "papel_en": "Sharpless",
-    "lugar": "Asociación Lírica Luis Mariano"
-  },
-  {
-    "anio": 2024,
-    "fecha_texto": "2024",
-    "inicio": null,
-    "fin": null,
-    "obra": "La Bohème — Puccini",
-    "papel_es": "Schaunard",
-    "papel_en": "Schaunard",
-    "lugar": "Opus Lirica"
-  },
-  {
-    "anio": 2023,
-    "fecha_texto": "2023",
-    "inicio": null,
-    "fin": null,
-    "obra": "Il barbiere di Siviglia — Rossini",
-    "papel_es": "Fígaro",
-    "papel_en": "Fígaro",
-    "lugar": "Ensemble Contratemps"
-  },
-  {
-    "anio": 2023,
-    "fecha_texto": "2023",
-    "inicio": null,
-    "fin": null,
-    "obra": "Barbieri 200 Años: Dos Sainetes Picarescos",
-    "papel_es": "Pascual",
-    "papel_en": "Pascual",
-    "lugar": "Teatro Real Coliseo Carlos III"
-  },
-  {
-    "anio": 2023,
-    "fecha_texto": "2023",
-    "inicio": null,
-    "fin": null,
+    "fecha_texto": "18 abr",
+    "inicio": "2024-04-18",
+    "fin": "2024-04-18",
     "obra": "Novena de Beethoven",
     "papel_es": "Barítono solista",
     "papel_en": "Baritone soloist",
-    "lugar": "Fundación Juan March"
+    "lugar": "Fundación Juan March, Madrid"
+  },
+  {
+    "anio": 2024,
+    "fecha_texto": "23–25 feb",
+    "inicio": "2024-02-23",
+    "fin": "2024-02-25",
+    "obra": "Doña Francisquita — Vives",
+    "papel_es": "Lorenzo Pérez",
+    "papel_en": "Lorenzo Pérez",
+    "lugar": "Gran Teatro de Córdoba"
+  },
+  {
+    "anio": 2024,
+    "fecha_texto": "2 y 4 feb",
+    "inicio": "2024-02-02",
+    "fin": "2024-02-04",
+    "obra": "Carmen — Bizet",
+    "papel_es": "Le Dancaïre",
+    "papel_en": "Le Dancaïre",
+    "lugar": "Auditorio Baluarte, Pamplona"
   },
   {
     "anio": 2023,
-    "fecha_texto": "2023",
-    "inicio": null,
-    "fin": null,
-    "obra": "Die Zauberflöte — Mozart",
-    "papel_es": "Papageno",
-    "papel_en": "Papageno",
-    "lugar": "Opus Lirica"
+    "fecha_texto": "2 dic – 2 ene",
+    "inicio": "2023-12-02",
+    "fin": "2024-01-02",
+    "obra": "Rigoletto — Verdi",
+    "papel_es": "Marullo",
+    "papel_en": "Marullo",
+    "lugar": "Teatro Real, Madrid"
+  },
+  {
+    "anio": 2023,
+    "fecha_texto": "9–19 nov",
+    "inicio": "2023-11-09",
+    "fin": "2023-11-19",
+    "obra": "Las golondrinas — Usandizaga",
+    "papel_es": "Puck",
+    "papel_en": "Puck",
+    "lugar": "Teatro de la Zarzuela, Madrid"
+  },
+  {
+    "anio": 2023,
+    "fecha_texto": "10–16 sep",
+    "inicio": "2023-09-10",
+    "fin": "2023-09-16",
+    "obra": "Manon — Massenet",
+    "papel_es": "Lescaut",
+    "papel_en": "Lescaut",
+    "lugar": "Teatro Campoamor, Oviedo"
+  },
+  {
+    "anio": 2023,
+    "fecha_texto": "12–13 may",
+    "inicio": "2023-05-12",
+    "fin": "2023-05-13",
+    "obra": "Doña Francisquita — Vives",
+    "papel_es": "Lorenzo Pérez",
+    "papel_en": "Lorenzo Pérez",
+    "lugar": "Palacio de Festivales de Cantabria, Santander"
+  },
+  {
+    "anio": 2023,
+    "fecha_texto": "22–23 abr",
+    "inicio": "2023-04-22",
+    "fin": "2023-04-23",
+    "obra": "La Bohème — Puccini",
+    "papel_es": "Marcello",
+    "papel_en": "Marcello",
+    "lugar": "Centro Cultural Amaia, Irun (Asociación Lírica Luis Mariano)"
+  },
+  {
+    "anio": 2023,
+    "fecha_texto": "3–4 feb",
+    "inicio": "2023-02-03",
+    "fin": "2023-02-04",
+    "obra": "Novena de Beethoven",
+    "papel_es": "Barítono solista",
+    "papel_en": "Baritone soloist",
+    "lugar": "Auditorio Nacional, Madrid (Orquesta y Coro Nacionales de España)"
+  },
+  {
+    "anio": 2023,
+    "fecha_texto": "27–29 ene",
+    "inicio": "2023-01-27",
+    "fin": "2023-01-29",
+    "obra": "Doña Francisquita — Vives",
+    "papel_es": "Lorenzo Pérez",
+    "papel_en": "Lorenzo Pérez",
+    "lugar": "Teatro Villamarta, Jerez de la Frontera"
   },
   {
     "anio": 2022,
-    "fecha_texto": "Nov",
-    "inicio": null,
-    "fin": null,
+    "fecha_texto": "18–27 nov",
+    "inicio": "2022-11-18",
+    "fin": "2022-11-27",
     "obra": "Policías y ladrones (estreno)",
     "papel_es": "El Presunto Implicado",
     "papel_en": "El Presunto Implicado",
@@ -291,52 +421,272 @@
   },
   {
     "anio": 2022,
-    "fecha_texto": "2022",
-    "inicio": null,
-    "fin": null,
-    "obra": "Luisa Fernanda — Moreno Torroba",
-    "papel_es": "Vidal Hernando",
-    "papel_en": "Vidal Hernando",
-    "lugar": "Palacio de Festivales de Cantabria"
+    "fecha_texto": "6–23 oct",
+    "inicio": "2022-10-06",
+    "fin": "2022-10-23",
+    "obra": "Pan y toros — Barbieri",
+    "papel_es": "Capitán Peñaranda",
+    "papel_en": "Capitán Peñaranda",
+    "lugar": "Teatro de la Zarzuela, Madrid"
   },
   {
     "anio": 2022,
-    "fecha_texto": "2022",
-    "inicio": null,
-    "fin": null,
-    "obra": "Pagliacci / Cavalleria rusticana",
-    "papel_es": "Silvio",
-    "papel_en": "Silvio",
-    "lugar": "Teatro Cervantes, Málaga"
-  },
-  {
-    "anio": 2022,
-    "fecha_texto": "2022",
-    "inicio": null,
-    "fin": null,
-    "obra": "Carmina Burana — Orff",
+    "fecha_texto": "15 sep",
+    "inicio": "2022-09-15",
+    "fin": "2022-09-15",
+    "obra": "Concierto del 125 aniversario del Orfeón Donostiarra",
     "papel_es": "Barítono solista",
     "papel_en": "Baritone soloist",
-    "lugar": "Orquesta Sinfónica de Las Palmas"
+    "lugar": "Auditorio Nacional, Madrid"
   },
   {
-    "anio": 2021,
-    "fecha_texto": "2021",
-    "inicio": null,
-    "fin": null,
+    "anio": 2022,
+    "fecha_texto": "8 jul",
+    "inicio": "2022-07-08",
+    "fin": "2022-07-08",
+    "obra": "Concierto extraordinario de coros (Orquesta Sinfónica de Castilla y León)",
+    "papel_es": "Barítono solista",
+    "papel_en": "Baritone soloist",
+    "lugar": "Centro Cultural Miguel Delibes, Valladolid"
+  },
+  {
+    "anio": 2022,
+    "fecha_texto": "16 y 18 jun",
+    "inicio": "2022-06-16",
+    "fin": "2022-06-18",
     "obra": "María Moliner — Fons",
     "papel_es": "Fernando Ramón",
     "papel_en": "Fernando Ramón",
-    "lugar": "Festival de Teatro Lírico Español, Teatro Campoamor"
+    "lugar": "Teatro Campoamor, Oviedo (Festival de Teatro Lírico Español)"
+  },
+  {
+    "anio": 2022,
+    "fecha_texto": "29–30 abr",
+    "inicio": "2022-04-29",
+    "fin": "2022-04-30",
+    "obra": "Luisa Fernanda — Moreno Torroba",
+    "papel_es": "Vidal Hernando",
+    "papel_en": "Vidal Hernando",
+    "lugar": "Palacio de Festivales de Cantabria, Santander"
+  },
+  {
+    "anio": 2022,
+    "fecha_texto": "1–10 abr",
+    "inicio": "2022-04-01",
+    "fin": "2022-04-10",
+    "obra": "The Magic Opal — Albéniz",
+    "papel_es": "Trabucos",
+    "papel_en": "Trabucos",
+    "lugar": "Teatro de la Zarzuela, Madrid"
+  },
+  {
+    "anio": 2022,
+    "fecha_texto": "28 y 30 ene",
+    "inicio": "2022-01-28",
+    "fin": "2022-01-30",
+    "obra": "Manon — Massenet",
+    "papel_es": "Monsieur de Brétigny",
+    "papel_en": "Monsieur de Brétigny",
+    "lugar": "Teatro Villamarta, Jerez de la Frontera"
   },
   {
     "anio": 2021,
-    "fecha_texto": "2021",
+    "fecha_texto": "20 oct – 14 nov",
+    "inicio": "2021-10-20",
+    "fin": "2021-11-14",
+    "obra": "Il barbiere di Siviglia — Rossini",
+    "papel_es": "Fígaro",
+    "papel_en": "Fígaro",
+    "lugar": "Gira de Òpera Catalunya (Sabadell, Reus, Barcelona y otras ciudades)"
+  },
+  {
+    "anio": 2021,
+    "fecha_texto": "24–26 sep",
+    "inicio": "2021-09-24",
+    "fin": "2021-09-26",
+    "obra": "Pagliacci — Leoncavallo",
+    "papel_es": "Silvio",
+    "papel_en": "Silvio",
+    "lugar": "Teatro Colón, A Coruña"
+  },
+  {
+    "anio": 2021,
+    "fecha_texto": "17–18 jun",
+    "inicio": "2021-06-17",
+    "fin": "2021-06-18",
+    "obra": "Concierto con obras de Marqués y Bretón",
+    "papel_es": "Barítono solista",
+    "papel_en": "Baritone soloist",
+    "lugar": "Teatro Cervantes, Málaga"
+  },
+  {
+    "anio": 2021,
+    "fecha_texto": "7 may",
+    "inicio": "2021-05-07",
+    "fin": "2021-05-07",
+    "obra": "Il barbiere di Siviglia — Rossini",
+    "papel_es": "Fígaro",
+    "papel_en": "Fígaro",
+    "lugar": "Teatro Circo, Albacete"
+  },
+  {
+    "anio": 2021,
+    "fecha_texto": "15–25 abr",
+    "inicio": "2021-04-15",
+    "fin": "2021-04-25",
+    "obra": "Benamor — Pablo Luna",
+    "papel_es": "Juan de León",
+    "papel_en": "Juan de León",
+    "lugar": "Teatro de la Zarzuela, Madrid"
+  },
+  {
+    "anio": 2021,
+    "fecha_texto": "19 feb – 2 may",
+    "inicio": "2021-02-19",
+    "fin": "2021-05-02",
+    "obra": "Réquiem — Mozart",
+    "papel_es": "Bajo solista",
+    "papel_en": "Bass soloist",
+    "lugar": "Kursaal, San Sebastián (Opus Lírica)"
+  },
+  {
+    "anio": 2021,
+    "fecha_texto": "Ene–feb",
     "inicio": null,
     "fin": null,
+    "obra": "Luisa Fernanda — Moreno Torroba (sustitución)",
+    "papel_es": "Vidal Hernando",
+    "papel_en": "Vidal Hernando",
+    "lugar": "Teatro de la Zarzuela, Madrid"
+  },
+  {
+    "anio": 2020,
+    "fecha_texto": "Feb–mar",
+    "inicio": null,
+    "fin": null,
+    "obra": "Il viaggio a Reims — Rossini",
+    "papel_es": "Don Álvaro",
+    "papel_en": "Don Álvaro",
+    "lugar": "Palau de les Arts, Valencia"
+  },
+  {
+    "anio": 2019,
+    "fecha_texto": "6–12 oct",
+    "inicio": "2019-10-06",
+    "fin": "2019-10-12",
+    "obra": "Rinaldo — Händel",
+    "papel_es": "Un mago",
+    "papel_en": "A Magician",
+    "lugar": "Teatro Campoamor, Oviedo"
+  },
+  {
+    "anio": 2019,
+    "fecha_texto": "8 sep",
+    "inicio": "2019-09-08",
+    "fin": "2019-09-08",
+    "obra": "Los Gavilanes — Guerrero",
+    "papel_es": "Juan",
+    "papel_en": "Juan",
+    "lugar": "Teatro Circo, Albacete"
+  },
+  {
+    "anio": 2019,
+    "fecha_texto": "22–23 may",
+    "inicio": "2019-05-22",
+    "fin": "2019-05-23",
+    "obra": "Il finto sordo — Manuel García",
+    "papel_es": "Pagnacca",
+    "papel_en": "Pagnacca",
+    "lugar": "Sala BBK, Bilbao (ABAO)"
+  },
+  {
+    "anio": 2019,
+    "fecha_texto": "6–12 may",
+    "inicio": "2019-05-06",
+    "fin": "2019-05-12",
+    "obra": "Il finto sordo — Manuel García",
+    "papel_es": "Pagnacca",
+    "papel_en": "Pagnacca",
+    "lugar": "Fundación Juan March, Madrid"
+  },
+  {
+    "anio": 2019,
+    "fecha_texto": "28 abr",
+    "inicio": "2019-04-28",
+    "fin": "2019-04-28",
+    "obra": "Los Gavilanes — Guerrero",
+    "papel_es": "Juan",
+    "papel_en": "Juan",
+    "lugar": "Teatro de Rojas, Toledo"
+  },
+  {
+    "anio": 2019,
+    "fecha_texto": "22–23 feb",
+    "inicio": "2019-02-22",
+    "fin": "2019-02-23",
+    "obra": "Die Zauberflöte — Mozart",
+    "papel_es": "Papageno",
+    "papel_en": "Papageno",
+    "lugar": "Kursaal, San Sebastián (Opus Lírica)"
+  },
+  {
+    "anio": 2018,
+    "fecha_texto": "23–24 nov",
+    "inicio": "2018-11-23",
+    "fin": "2018-11-24",
+    "obra": "Los Gavilanes — Guerrero",
+    "papel_es": "Juan",
+    "papel_en": "Juan",
+    "lugar": "Teatro Gayarre, Pamplona"
+  },
+  {
+    "anio": 2018,
+    "fecha_texto": "10 nov",
+    "inicio": "2018-11-10",
+    "fin": "2018-11-10",
+    "obra": "Misa de los niños (Mass of the Children) — Rutter",
+    "papel_es": "Barítono solista",
+    "papel_en": "Baritone soloist",
+    "lugar": "Riojafórum, Logroño"
+  },
+  {
+    "anio": 2018,
+    "fecha_texto": "29 oct – 7 nov",
+    "inicio": "2018-10-29",
+    "fin": "2018-11-07",
+    "obra": "Los Gavilanes — Guerrero",
+    "papel_es": "Juan",
+    "papel_en": "Juan",
+    "lugar": "Teatro Colón, Bogotá"
+  },
+  {
+    "anio": 2018,
+    "fecha_texto": "20 oct",
+    "inicio": "2018-10-20",
+    "fin": "2018-10-20",
+    "obra": "Carmen — Bizet (en concierto)",
+    "papel_es": "Escamillo",
+    "papel_en": "Escamillo",
+    "lugar": "Auditorio Nacional, Madrid"
+  },
+  {
+    "anio": 2018,
+    "fecha_texto": "12–14 abr",
+    "inicio": "2018-04-12",
+    "fin": "2018-04-14",
+    "obra": "La malquerida — Penella",
+    "papel_es": "Esteban",
+    "papel_en": "Esteban",
+    "lugar": "Teatro Campoamor, Oviedo"
+  },
+  {
+    "anio": 2018,
+    "fecha_texto": "2–4 mar",
+    "inicio": "2018-03-02",
+    "fin": "2018-03-04",
     "obra": "La Bohème — Puccini",
-    "papel_es": "Marcello",
-    "papel_en": "Marcello",
-    "lugar": "Asociación Lírica Luis Mariano"
+    "papel_es": "Schaunard",
+    "papel_en": "Schaunard",
+    "lugar": "Kursaal, San Sebastián (Opus Lírica)"
   }
 ]

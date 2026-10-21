@@ -21,7 +21,7 @@ echo
 [ -d .git ] || { echo "✗ Esta carpeta no es un repositorio de Git. Avisa a Claude."; echo; read -n 1; exit 1; }
 
 # Candados que deja la máquina de Claude (no puede borrar archivos).
-CANDADOS=$(find .git -maxdepth 2 -name '*.lock' 2>/dev/null)
+CANDADOS=$(find .git -name '*.lock' -not -path '.git/objects/*' 2>/dev/null)
 if [ -n "$CANDADOS" ]; then
   if pgrep -x git >/dev/null; then
     echo "⚠ Hay un proceso de git en marcha. Ciérralo y vuelve a intentarlo."
@@ -32,6 +32,9 @@ fi
 find .git/objects -name 'tmp_obj_*' -delete 2>/dev/null
 
 git config credential.helper osxkeychain 2>/dev/null
+# Nombre con el que se guardan los cambios (sin él, git no deja guardar).
+git config user.name >/dev/null || git config user.name "César San Martín"
+git config user.email >/dev/null || git config user.email "7ghtnfzys9@privaterelay.appleid.com"
 
 # Comprobación: que la web se genere sin errores antes de enviarla.
 echo "▸ Comprobando que la web se genera bien…"
@@ -50,7 +53,12 @@ if git diff --cached --quiet; then
   echo "  (no hay cambios nuevos que guardar)"
 else
   MSG="Actualización de la web — $(date '+%-d/%m/%Y %H:%M')"
-  git commit -m "$MSG" >/dev/null && echo "✓ Guardado: $MSG"
+  if ! git commit -q -m "$MSG"; then
+    echo
+    echo "✗ No se han podido guardar los cambios (ver el mensaje de arriba). NO se ha enviado nada. Avisa a Claude."
+    echo; read -n 1; exit 1
+  fi
+  echo "✓ Guardado: $MSG"
 fi
 echo
 
