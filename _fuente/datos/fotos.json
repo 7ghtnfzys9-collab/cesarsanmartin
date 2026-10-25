@@ -1,0 +1,245 @@
+{
+ "_nota": "Galería «En escena» de /videos/. Cada foto está en img/escena/ (grande, máx. 1800 px) y en img/escena/m/ (miniatura, máx. 800 px). El orden de esta lista es el de la web (alternando producciones para que el mosaico no agrupe fotos iguales). Campos vacíos o null = dato sin confirmar (no se muestra). Sin créditos de fotógrafo por decisión de César (servicio pagado). Aprobadas por César el 25-10-2026 (carpeta «Fotos escena para revisar»).",
+ "fotos": [
+  {
+   "archivo": "pagliacci-02.jpg",
+   "obra": "Pagliacci",
+   "compositor": "Leoncavallo",
+   "lugar_es": "Teatro Colón, A Coruña",
+   "lugar_en": "Teatro Colón, A Coruña",
+   "anio": 2021,
+   "papel": "Silvio",
+   "credito": ""
+  },
+  {
+   "archivo": "il-viaggio-a-reims-01.jpg",
+   "obra": "Il viaggio a Reims",
+   "compositor": "Rossini",
+   "lugar_es": "Palau de les Arts, Valencia",
+   "lugar_en": "Palau de les Arts, Valencia",
+   "anio": 2020,
+   "papel": "Don Álvaro",
+   "credito": ""
+  },
+  {
+   "archivo": "il-finto-sordo-01.jpg",
+   "obra": "Il finto sordo",
+   "compositor": "Manuel García",
+   "lugar_es": "Fundación Juan March, Madrid",
+   "lugar_en": "Fundación Juan March, Madrid",
+   "anio": 2019,
+   "papel": "Pagnacca",
+   "credito": ""
+  },
+  {
+   "archivo": "die-zauberflote-01.jpg",
+   "obra": "Die Zauberflöte",
+   "compositor": "Mozart",
+   "lugar_es": "Kursaal, San Sebastián",
+   "lugar_en": "Kursaal, San Sebastián",
+   "anio": 2019,
+   "papel": "Papageno",
+   "credito": ""
+  },
+  {
+   "archivo": "carmen-01.jpg",
+   "obra": "Carmen",
+   "compositor": "Bizet",
+   "lugar_es": "Teatro Real, Madrid",
+   "lugar_en": "Teatro Real, Madrid",
+   "anio": 2017,
+   "papel": "Escamillo",
+   "credito": ""
+  },
+  {
+   "archivo": "el-gato-montes-01.jpg",
+   "obra": "El gato montés",
+   "compositor": "Penella",
+   "lugar_es": "Teatro de la Zarzuela, Madrid",
+   "lugar_en": "Teatro de la Zarzuela, Madrid",
+   "anio": 2017,
+   "papel": "Juanillo, el Gato Montés",
+   "credito": ""
+  },
+  {
+   "archivo": "la-traviata-01.jpg",
+   "obra": "La traviata",
+   "compositor": "Verdi",
+   "lugar_es": "Teatro Real, Madrid",
+   "lugar_en": "Teatro Real, Madrid",
+   "anio": 2015,
+   "papel": "Barón Douphol",
+   "credito": ""
+  },
+  {
+   "archivo": "iphigenie-en-tauride-01.jpg",
+   "obra": "Iphigénie en Tauride",
+   "compositor": "Gluck",
+   "lugar_es": "Teatro Real, Madrid",
+   "lugar_en": "Teatro Real, Madrid",
+   "anio": null,
+   "papel": "",
+   "credito": ""
+  },
+  {
+   "archivo": "rigoletto-01.jpg",
+   "obra": "Rigoletto",
+   "compositor": "Verdi",
+   "lugar_es": "Palacio Euskalduna (ABAO), Bilbao",
+   "lugar_en": "Euskalduna Palace (ABAO), Bilbao",
+   "anio": 2013,
+   "papel": "Conde Ceprano",
+   "credito": ""
+  },
+  {
+   "archivo": "la-fille-du-regiment-01.jpg",
+   "obra": "La fille du régiment",
+   "compositor": "Donizetti",
+   "lugar_es": "Teatro Colón, A Coruña",
+   "lugar_en": "Teatro Colón, A Coruña",
+   "anio": 2010,
+   "papel": "",
+   "credito": ""
+  },
+  {
+   "archivo": "la-malquerida-01.jpg",
+   "obra": "La malquerida",
+   "compositor": "Penella",
+   "lugar_es": "Teatros del Canal, Madrid",
+   "lugar_en": "Teatros del Canal, Madrid",
+   "anio": 2017,
+   "papel": "Esteban",
+   "credito": ""
+  },
+  {
+   "archivo": "los-diamantes-de-la-corona-01.jpg",
+   "obra": "Los diamantes de la corona",
+   "compositor": "Barbieri",
+   "lugar_es": "Teatro de la Zarzuela, Madrid",
+   "lugar_en": "Teatro de la Zarzuela, Madrid",
+   "anio": 2010,
+   "papel": "Don Sebastián",
+   "credito": ""
+  },
+  {
+   "archivo": "la-villana-01.jpg",
+   "obra": "La villana",
+   "compositor": "Vives",
+   "lugar_es": "Teatro de la Zarzuela, Madrid",
+   "lugar_en": "Teatro de la Zarzuela, Madrid",
+   "anio": 2017,
+   "papel": "Peribáñez",
+   "credito": ""
+  },
+  {
+   "archivo": "pagliacci-03.jpg",
+   "obra": "Pagliacci",
+   "compositor": "Leoncavallo",
+   "lugar_es": "Teatro Colón, A Coruña",
+   "lugar_en": "Teatro Colón, A Coruña",
+   "anio": 2021,
+   "papel": "Silvio",
+   "credito": ""
+  },
+  {
+   "archivo": "il-finto-sordo-02.jpg",
+   "obra": "Il finto sordo",
+   "compositor": "Manuel García",
+   "lugar_es": "Fundación Juan March, Madrid",
+   "lugar_en": "Fundación Juan March, Madrid",
+   "anio": 2019,
+   "papel": "Pagnacca",
+   "credito": ""
+  },
+  {
+   "archivo": "carmen-02.jpg",
+   "obra": "Carmen",
+   "compositor": "Bizet",
+   "lugar_es": "Teatro Real, Madrid",
+   "lugar_en": "Teatro Real, Madrid",
+   "anio": 2017,
+   "papel": "Escamillo",
+   "credito": ""
+  },
+  {
+   "archivo": "el-gato-montes-02.jpg",
+   "obra": "El gato montés",
+   "compositor": "Penella",
+   "lugar_es": "Teatro de la Zarzuela, Madrid",
+   "lugar_en": "Teatro de la Zarzuela, Madrid",
+   "anio": 2017,
+   "papel": "Juanillo, el Gato Montés",
+   "credito": ""
+  },
+  {
+   "archivo": "la-traviata-02.jpg",
+   "obra": "La traviata",
+   "compositor": "Verdi",
+   "lugar_es": "Teatro Real, Madrid",
+   "lugar_en": "Teatro Real, Madrid",
+   "anio": 2015,
+   "papel": "Barón Douphol",
+   "credito": ""
+  },
+  {
+   "archivo": "la-fille-du-regiment-02.jpg",
+   "obra": "La fille du régiment",
+   "compositor": "Donizetti",
+   "lugar_es": "Teatro Colón, A Coruña",
+   "lugar_en": "Teatro Colón, A Coruña",
+   "anio": 2010,
+   "papel": "",
+   "credito": ""
+  },
+  {
+   "archivo": "pagliacci-01.jpg",
+   "obra": "Pagliacci",
+   "compositor": "Leoncavallo",
+   "lugar_es": "Teatro Colón, A Coruña",
+   "lugar_en": "Teatro Colón, A Coruña",
+   "anio": 2021,
+   "papel": "Silvio",
+   "credito": ""
+  },
+  {
+   "archivo": "il-finto-sordo-03.jpg",
+   "obra": "Il finto sordo",
+   "compositor": "Manuel García",
+   "lugar_es": "Fundación Juan March, Madrid",
+   "lugar_en": "Fundación Juan March, Madrid",
+   "anio": 2019,
+   "papel": "Pagnacca",
+   "credito": ""
+  },
+  {
+   "archivo": "carmen-03.jpg",
+   "obra": "Carmen",
+   "compositor": "Bizet",
+   "lugar_es": "Teatro Real, Madrid",
+   "lugar_en": "Teatro Real, Madrid",
+   "anio": 2017,
+   "papel": "Escamillo",
+   "credito": ""
+  },
+  {
+   "archivo": "el-gato-montes-03.jpg",
+   "obra": "El gato montés",
+   "compositor": "Penella",
+   "lugar_es": "Teatro de la Zarzuela, Madrid",
+   "lugar_en": "Teatro de la Zarzuela, Madrid",
+   "anio": 2017,
+   "papel": "Juanillo, el Gato Montés",
+   "credito": ""
+  },
+  {
+   "archivo": "la-fille-du-regiment-03.jpg",
+   "obra": "La fille du régiment",
+   "compositor": "Donizetti",
+   "lugar_es": "Teatro Colón, A Coruña",
+   "lugar_en": "Teatro Colón, A Coruña",
+   "anio": 2010,
+   "papel": "",
+   "credito": ""
+  }
+ ]
+}

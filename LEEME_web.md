@@ -1,8 +1,31 @@
 # Web de César San Martín (www.cesarsanmartin.com)
 
-Última actualización: 21-10-2026. **Al empezar una sesión nueva sobre la web, Claude lee primero este archivo.**
+Última actualización: 25-10-2026. **Al empezar una sesión nueva sobre la web, Claude lee primero este archivo.**
 
-## 21-10-2026 — Agenda corregida (pendiente de publicar)
+## 25-10-2026 (2.ª parte) — Cambios aprobados por César (HECHO EN LOCAL, FALTA SUBIR)
+
+- Agenda según Operabase (aprobado): Cracovia → «Concierto oratorio (Palmeri, Chaikovski, Strayhorn, Ellington)», Filharmonia Krakowska; Revoltosa Santander 24-25 abr 2026; Verbena Zarzuela 23 sep-4 oct 2026; «Pedro Stakoff».
+- Fotos: SIN créditos de fotógrafo (César pagó el servicio; campo `credito` vacío).
+- Papeles y años de los pies de foto: Carmen T. Real 2017 Escamillo (César + Operabase); El gato montés Zarzuela 2017 Juanillo, el Gato Montés (César + programa de mano); La traviata T. Real 2015 Barón Douphol; Rigoletto ABAO-Euskalduna 2013 Conde Ceprano; La malquerida Canal 2017 Esteban; La villana Zarzuela 2017 Peribáñez (Operabase); Los diamantes de la corona Zarzuela 2010 Don Sebastián (crítica de zarzuela.net, 29-4-2010).
+- Respuesta de César: La fille du régiment → 2010, Teatro Colón de A Coruña (sin papel). Iphigénie en Tauride (Teatro Real) → sin papel; año sin confirmar (la única producción encontrada es la de enero de 2011), por eso no se muestra.
+
+## 25-10-2026 — Galería de fotos de escena y Réquiem de Brahms (HECHO EN LOCAL, FALTA SUBIR con doble clic en SUBIR_WEB_CESAR.command)
+
+**Galería «En escena» (/videos/ y /en/videos/):**
+- César revisó la carpeta `Web César/Fotos escena para revisar` y dejó 23 fotos de 13 producciones (añadió por su cuenta Zauberflöte, Il finto sordo, Il viaggio a Reims y La villana).
+- Optimizadas en `_fuente/img/escena/` (grandes, máx. 1800 px) y `_fuente/img/escena/m/` (miniaturas, máx. 800 px). La antigua `escena-01.jpg` (Pagliacci) se conserva como `pagliacci-03.jpg`; `escena-02.jpg` era repetida. Ambas originales en `Web César/to delete/img_escena_antiguas_25-10-2026/`.
+- Datos y pies de foto en `_fuente/datos/fotos.json` (obra, compositor, lugar, año, papel, crédito). Solo datos confirmados (carpetas de César, agenda o marca de agua); lo que falta va vacío y no se muestra.
+- Diseño: mosaico que respeta la forma de cada foto (3 columnas; 2 en móvil) + visor a pantalla completa con flechas y tecla Esc. Datos estructurados ImageObject con crédito.
+- (Créditos retirados en la 2.ª parte, ver arriba.)
+- **Dudas para César**: años de Traviata, Iphigénie, Rigoletto (Euskalduna), Fille du régiment, Malquerida (Canal), Diamantes de la corona, La villana; papeles en Carmen 2017, Gato Montés, etc.; fotógrafos de Fille, Malquerida, Diamantes, Pagliacci, Rigoletto, Villana y Zauberflöte (el archivo de Zauberflöte lleva «Arseniog» como copyright en sus datos internos: sin confirmar, no puesto).
+- Copia del build.py anterior en `Web César/to delete/build_antes_galeria_25-10-2026.py`.
+
+**Agenda:**
+- Añadido: Un réquiem alemán (Brahms), barítono solista, Catedral Primada de Toledo, 31-10-2026, VIII Centenario. Fuente: programa oficial del VIII Centenario (catedralprimada.es: «31 de octubre 2026. Réquiem de Brahms», Coro Jacinto Guerrero, dir. «Bautista Carmena» —errata en la web—) y página del Coro UPM (20:00). La participación de César la dice él; no aparece en fuentes públicas. Orquesta no publicada.
+- Copia de la agenda anterior: `Web César/to delete/agenda_antes_25-10-2026.json`.
+- Operabase (consultado 25-10-2026): futuras solo Katiuska (Gayarre, 20-21 nov, dir. Javier Echarri, esc. Ekaitz Unai González) y Cracovia (18-19 dic, **Filharmonia Krakowska**, «Koncert Oratoryjny»: Palmeri, Chaikovski, Strayhorn, Ellington; dir. Néstor Bayona). Nada en 2027-2028. Pendiente que César apruebe poner la sala de Cracovia. Diferencias con la agenda: Revoltosa Santander 24-25 abr (agenda: solo 25), Verbena Zarzuela desde 23 sep (agenda: 24), «Stakoff» (agenda: «Stakof»).
+
+## 21-10-2026 — Agenda corregida (PUBLICADA el 21-10 a las 15:40, comprobada en la web)
 
 Se buscaron en internet (Operabase, programas, críticas) las fechas que faltaban en `datos/agenda.json`. Ahora todas las funciones tienen fecha exacta. Cambios aprobados por César:
 - Años corregidos según las fuentes: Carmen → 2 y 4 feb 2024, Baluarte (Pamplona); Manon → 28-30 ene 2022; Bohème/Schaunard (Opus Lírica) → 2-4 mar 2018, Kursaal; Zauberflöte → 22-23 feb 2019, Kursaal; Barbiere → gira de Òpera Catalunya, 20 oct-14 nov 2021; María Moliner → 16 y 18 jun 2022; Bohème/Marcello (Luis Mariano) → 22-23 abr 2023, Irun; Barbieri 200 años → 29 jun 2024.
@@ -19,6 +42,13 @@ Se buscaron en internet (Operabase, programas, críticas) las fechas que faltaba
   - Dudas que quedan: Los Gavilanes Bogotá 2018 (Operabase dice 29 oct-7 nov; un artículo de El Tiempo habla de estreno el 29 sep); Tabernera Zarzuela 2025 y Orlando furioso 2025 pueden tener más funciones (Operabase: 4-22 jun y 14-22 nov); no hay fuente pública de Carmina Getafe 3-7-2026 ni de la Verbena de Oviedo 16-5-2026.
   - Noticias: Policías y ladrones fechada «Noviembre 2022».
 - Dato útil: Operabase tiene la lista de funciones de César por año (operabase.com/cesar-san-martin-a3577/AAAA/performances), con algún error de sala.
+
+## 21-10-2026 — Arreglos en SUBIR_WEB_CESAR.command
+
+- El Mac no tenía nombre de git configurado: el «commit» fallaba y el script decía por error «la web ya está al día». Ahora: nombre «César San Martín» y correo privaterelay guardados en `.git/config`; el script los pone si faltan y se para con aviso si el guardado falla.
+- Los candados de git que deja la máquina de Claude (no puede borrar archivos) se buscan ahora en todo `.git` (antes solo 2 niveles; quedó uno en `.git/refs/heads/main.lock`).
+- Ojo: si Claude edita este script con `sed -i`, pierde el permiso de ejecución → hacer `chmod 755` después. Alternativa para César: en Terminal, `bash <ruta>/SUBIR_WEB_CESAR.command`.
+- La publicación automática al subir cambios tardó en arrancar; se lanzó a mano (Actions → Publicar la web → Run workflow). Si vuelve a pasar, hacer lo mismo.
 
 ## Qué cambió el 20-10-2026
 

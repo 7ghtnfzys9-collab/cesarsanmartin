@@ -95,3 +95,24 @@ h2.section-label,h3.section-label{font-weight:300;}
 .contact-side{display:flex;flex-direction:column;gap:16px;}
 .contact-link{font-size:15px;color:var(--clay);letter-spacing:.06em;border-bottom:1px solid var(--line-lt);padding-bottom:16px;}
 .contact-link:hover{color:var(--clay-lt);}
+
+/* Galería «En escena» (25-10-2026): mosaico que respeta la forma de cada foto + visor a pantalla completa */
+.gal-masonry{columns:3 260px;column-gap:10px;margin-top:8px;}
+.gal-item{break-inside:avoid;margin:0 0 14px;}
+.gal-link{display:block;overflow:hidden;border-radius:2px;background:#1a1a1a;}
+.gal-link img{display:block;width:100%;height:auto;transition:transform .5s ease;}
+.gal-link:hover img{transform:scale(1.03);}
+.gal-item figcaption{font-size:12px;line-height:1.55;color:#b8b2a8;padding:6px 2px 0;letter-spacing:.02em;}
+.gal-item figcaption em,.visor figcaption em{font-style:italic;color:var(--white);}
+.gal-cred{display:block;font-size:11px;color:#8a857d;}
+.visor{border:0;padding:0;background:transparent;max-width:100vw;max-height:100vh;width:100vw;height:100vh;}
+.visor::backdrop{background:rgba(10,10,10,.94);}
+.visor figure{margin:0;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 64px 24px;box-sizing:border-box;}
+.visor img{max-width:100%;max-height:calc(100vh - 130px);object-fit:contain;}
+.visor figcaption{color:#c8c2b8;font-size:13px;text-align:center;margin-top:12px;max-width:720px;}
+.visor-x,.visor-nav{position:absolute;background:none;border:0;color:#fff;cursor:pointer;font-size:42px;line-height:1;padding:8px 14px;opacity:.75;}
+.visor-x:hover,.visor-nav:hover{opacity:1;color:var(--clay-lt);}
+.visor-x{top:6px;right:10px;}
+.visor-nav{top:50%;transform:translateY(-50%);font-size:56px;}
+.visor-prev{left:4px;}.visor-next{right:4px;}
+@media(max-width:600px){.gal-masonry{columns:2;column-gap:8px;}.visor figure{padding:48px 8px 16px;}.visor-nav{top:auto;bottom:8px;transform:none;}}

@@ -88,7 +88,7 @@ T = {  # textos de la interfaz
            "ultimo": "Lo último en mis redes", "mas_noticias": "Más noticias", "ver_yt": "Ver en YouTube ↗",
            "ver_insta": "Ver en Instagram ↗", "reproducir": "Reproducir", "mas_canal": "Más vídeos en el canal de YouTube",
            "canal": "Ver canal completo ↗", "fotos": "Fotos", "galeria": "Galería", "retratos": "Retratos",
-           "mas_retratos": "Ver más retratos", "menos_retratos": "Ver menos", "escena": "En escena",
+           "mas_retratos": "Ver más retratos", "menos_retratos": "Ver menos", "escena": "En escena", "foto_de": "Foto", "ampliar": "Ampliar foto", "cerrar": "Cerrar", "anterior": "Anterior", "siguiente": "Siguiente",
            "noticias": "Noticias", "entrevistas": "Entrevistas y prensa", "prensa": "Prensa",
            "criticas": "Críticas", "contacto": "Contacto", "nombre": "Nombre", "asunto": "Asunto",
            "mensaje": "Mensaje", "enviar": "Enviar mensaje", "motivo": "Selecciona el motivo",
@@ -113,7 +113,7 @@ T = {  # textos de la interfaz
            "ultimo": "Latest on social media", "mas_noticias": "More news", "ver_yt": "Watch on YouTube ↗",
            "ver_insta": "View on Instagram ↗", "reproducir": "Play", "mas_canal": "More videos on the YouTube channel",
            "canal": "Full YouTube channel ↗", "fotos": "Photos", "galeria": "Gallery", "retratos": "Portraits",
-           "mas_retratos": "More portraits", "menos_retratos": "Show less", "escena": "On stage",
+           "mas_retratos": "More portraits", "menos_retratos": "Show less", "escena": "On stage", "foto_de": "Photo", "ampliar": "Enlarge photo", "cerrar": "Close", "anterior": "Previous", "siguiente": "Next",
            "noticias": "News", "entrevistas": "Interviews & press", "prensa": "Press",
            "criticas": "Reviews", "contacto": "Contact", "nombre": "Name", "asunto": "Subject",
            "mensaje": "Message", "enviar": "Send message", "motivo": "Select a reason",
@@ -300,6 +300,7 @@ VIDEOS = leer("videos.json")["videos"]
 PRENSA = leer("prensa.json")
 NOTICIAS = leer("noticias.json")
 BIO = leer("biografia.json")
+FOTOS = leer("fotos.json")["fotos"] if os.path.exists(os.path.join(DATOS, "fotos.json")) else []
 
 
 def proximas():
@@ -459,6 +460,25 @@ document.addEventListener('click',function(ev){{
     g.classList.toggle('open',o);g.setAttribute('aria-expanded',o);
     g.querySelector('.txt').textContent=o?g.getAttribute('data-menos'):g.getAttribute('data-mas');
   }}
+  var v=document.getElementById('visor');
+  var l=ev.target.closest('.gal-link');
+  if(l&&v&&v.showModal){{ev.preventDefault();verFoto(+l.getAttribute('data-i'));v.showModal();return;}}
+  if(v&&v.open){{
+    if(ev.target.closest('.visor-prev'))verFoto(vi-1);
+    else if(ev.target.closest('.visor-next'))verFoto(vi+1);
+    else if(ev.target.closest('.visor-x')||ev.target===v)v.close();
+  }}
+}});
+var vi=0;
+function verFoto(i){{
+  var ls=document.querySelectorAll('.gal-link'),v=document.getElementById('visor');if(!ls.length)return;
+  vi=(i+ls.length)%ls.length;var a=ls[vi],im=v.querySelector('img');
+  im.src=a.getAttribute('href');im.alt=a.querySelector('img').alt;
+  v.querySelector('figcaption').innerHTML=a.parentNode.querySelector('figcaption').innerHTML;
+}}
+document.addEventListener('keydown',function(ev){{
+  var v=document.getElementById('visor');if(!v||!v.open)return;
+  if(ev.key==='ArrowLeft')verFoto(vi-1);else if(ev.key==='ArrowRight')verFoto(vi+1);
 }});
 </script>
 </body>
@@ -642,6 +662,47 @@ def pag_agenda(lang):
 """ + pie(lang)
 
 
+def foto_textos(f, lang):
+    """(pie de foto, texto alternativo) de una foto de escena. Solo usa los datos confirmados de fotos.json."""
+    es = lang == "es"
+    lug = f["lugar_es"] if es else (f.get("lugar_en") or f["lugar_es"])
+    lug_anio = lug + (f", {f['anio']}" if f.get("anio") else "")
+    obra = f'<em>{f["obra"]}</em> ({f["compositor"]})' if f.get("compositor") else f'<em>{f["obra"]}</em>'
+    pie_txt = obra + (f' · {f["papel"]}' if f.get("papel") else "") + f" · {lug_anio}"
+    alt = (f'César San Martín en {f["obra"]}' + (f' de {f["compositor"]}' if f.get("compositor") else "")
+           + (f', como {f["papel"]}' if f.get("papel") else "") + f", {lug_anio}") if es else \
+          (f'César San Martín in {f["obra"]}' + (f' by {f["compositor"]}' if f.get("compositor") else "")
+           + (f' as {f["papel"]}' if f.get("papel") else "") + f", {lug_anio}")
+    return pie_txt, alt
+
+
+def galeria_escena(lang):
+    tx = T[lang]
+    items = ""
+    for i, f in enumerate(FOTOS):
+        pie_txt, alt = foto_textos(f, lang)
+        cred = f'<span class="gal-cred">{tx["foto_de"]}: © {f["credito"]}</span>' if f.get("credito") else ""
+        items += (f'<figure class="gal-item"><a href="/img/escena/{f["archivo"]}" class="gal-link" data-i="{i}" '
+                  f'aria-label="{tx["ampliar"]}: {alt}">{img("/img/escena/m/" + f["archivo"], alt)}</a>'
+                  f'<figcaption>{pie_txt}{cred}</figcaption></figure>')
+    return (f'<div class="gal-masonry">{items}</div>'
+            f'<dialog class="visor" id="visor" aria-label="{tx["escena"]}">'
+            f'<button type="button" class="visor-x" aria-label="{tx["cerrar"]}">×</button>'
+            f'<button type="button" class="visor-nav visor-prev" aria-label="{tx["anterior"]}">‹</button>'
+            f'<figure><img alt=""><figcaption></figcaption></figure>'
+            f'<button type="button" class="visor-nav visor-next" aria-label="{tx["siguiente"]}">›</button></dialog>')
+
+
+def foto_ld(f, lang):
+    _, alt = foto_textos(f, lang)
+    o = {"@type": "ImageObject", "contentUrl": f"{DOM}/img/escena/{f['archivo']}",
+         "thumbnailUrl": f"{DOM}/img/escena/m/{f['archivo']}", "caption": alt}
+    if f.get("credito"):
+        o["creditText"] = f["credito"]
+        o["copyrightNotice"] = "© " + f["credito"]
+    return o
+
+
 def pag_videos(lang):
     tx = T[lang]
     _, subidas = redes()
@@ -653,9 +714,8 @@ def pag_videos(lang):
         secciones += (f'<section class="video-seccion" id="{g}"><h2 class="section-title video-h2">{nombre}</h2>'
                       f'<p class="video-intro">{texto}</p><div class="video-grid">'
                       + "".join(video_html(v, lang) for v in vs) + "</div></section>")
-    ld = [x for x in (video_ld(v, lang, subidas) for v in VIDEOS) if x]
+    ld = [x for x in (video_ld(v, lang, subidas) for v in VIDEOS) if x] + [foto_ld(f, lang) for f in FOTOS]
     alt_r = "Retrato de César San Martín, barítono" if lang == "es" else "Portrait of César San Martín, baritone"
-    alt_e = "César San Martín en escena" if lang == "es" else "César San Martín on stage"
     ret = lambda ns: "".join(f'<div class="p">{img(f"/img/retrato-0{n}.jpg", alt_r)}</div>' for n in ns)
     return cabecera("videos", lang, ld) + f"""
 <section class="inner-page">
@@ -678,10 +738,7 @@ def pag_videos(lang):
     <div class="gallery-portraits gallery-more" id="gallery-extra">{ret((5, 6, 7))}</div>
     <button class="gallery-toggle-btn" type="button" aria-expanded="false" aria-controls="gallery-extra" data-mas="{tx['mas_retratos']}" data-menos="{tx['menos_retratos']}"><span class="txt">{tx['mas_retratos']}</span> <span class="arrow" aria-hidden="true">▼</span></button>
     <h3 class="gallery-sub gallery-sub2">{tx['escena']}</h3>
-    <div class="gallery-stage">
-      <div class="p">{img('/img/escena-01.jpg', alt_e)}</div>
-      <div class="p">{img('/img/escena-02.jpg', alt_e)}</div>
-    </div>
+    {galeria_escena(lang)}
   </div>
 </section>
 """ + pie(lang)
