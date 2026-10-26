@@ -4,10 +4,15 @@
     "fecha_texto": "18–19 dic",
     "inicio": "2026-12-18",
     "fin": "2026-12-19",
-    "obra": "Concierto oratorio (Palmeri, Chaikovski, Strayhorn, Ellington)",
+    "obra": "Oratorio de Navidad (Palmeri) / El cascanueces (Chaikovski – Ellington)",
     "papel_es": "Barítono solista",
     "papel_en": "Baritone soloist",
-    "lugar": "Filharmonia Krakowska, Cracovia (Polonia)"
+    "lugar": "Filharmonia Krakowska, Cracovia (Polonia)",
+    "organizador": "Filharmonia Krakowska",
+    "organizador_url": "https://filharmoniakrakow.pl/",
+    "entradas_url": "https://filharmoniakrakow.pl/public/program/koncert-oratoryjny-147-2-2-2-2-2-2-2-2-2-4-2-2-2-2-2-2-2-2-2-2-2-2",
+    "precio_desde": 20,
+    "moneda": "PLN"
   },
   {
     "anio": 2026,
@@ -15,9 +20,13 @@
     "inicio": "2026-11-20",
     "fin": "2026-11-21",
     "obra": "Katiuska",
-    "papel_es": "Pedro Stakoff",
-    "papel_en": "Pedro Stakoff",
-    "lugar": "Teatro Gayarre, Pamplona"
+    "papel_es": "Pedro Stakof",
+    "papel_en": "Pedro Stakof",
+    "lugar": "Teatro Gayarre, Pamplona",
+    "organizador": "AGAO (Asociación Gayarre Amigos de la Ópera)",
+    "entradas_url": "https://teatrogayarre.com/katiuska-de-pablo-sorozabal/",
+    "precio_desde": 27,
+    "moneda": "EUR"
   },
   {
     "anio": 2026,

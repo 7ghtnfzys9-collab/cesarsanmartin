@@ -341,11 +341,32 @@ def evento(a, lang):
     sitio = {"@type": "Place", "name": partes[0],
              "address": {"@type": "PostalAddress", "addressLocality": partes[-1] if len(partes) > 1 else partes[0]}}
     nombre = a["obra"] + (f" — {papel(a, lang)}" if papel(a, lang) else "")
-    return {"@type": "MusicEvent", "name": nombre, "startDate": a["inicio"], "endDate": a["fin"] or a["inicio"],
+    ev = {"@type": "MusicEvent", "name": nombre, "startDate": a["inicio"], "endDate": a["fin"] or a["inicio"],
             "eventStatus": "https://schema.org/EventScheduled",
             "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
             "location": sitio, "image": f"{DOM}/img/hero.jpg",
+            "description": descripcion_evento(a, lang),
             "performer": {"@id": f"{DOM}/#cesar"}}
+    # Solo datos confirmados en agenda.json: si faltan, no se envían a Google.
+    org = a.get("organizador")
+    if org:
+        ev["organizer"] = {"@type": "Organization", "name": org}
+        if a.get("organizador_url"):
+            ev["organizer"]["url"] = a["organizador_url"]
+    if a.get("entradas_url"):
+        of = {"@type": "Offer", "url": a["entradas_url"]}
+        if a.get("precio_desde") is not None and a.get("moneda"):
+            of["price"] = str(a["precio_desde"])
+            of["priceCurrency"] = a["moneda"]
+        ev["offers"] = of
+    return ev
+
+
+def descripcion_evento(a, lang):
+    p = papel(a, lang)
+    if lang == "es":
+        return f"César San Martín{' (' + p + ')' if p else ''} en «{a['obra']}». {lugar(a, lang)}."
+    return f"César San Martín{' (' + p + ')' if p else ''} in {a['obra']}. {lugar(a, lang)}."
 
 
 def video_ld(v, lang, subidas):

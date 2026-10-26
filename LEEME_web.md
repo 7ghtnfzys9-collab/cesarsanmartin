@@ -1,15 +1,25 @@
 # Web de César San Martín (www.cesarsanmartin.com)
 
-Última actualización: 25-10-2026. **Al empezar una sesión nueva sobre la web, Claude lee primero este archivo.**
+Última actualización: 26-10-2026. **Al empezar una sesión nueva sobre la web, Claude lee primero este archivo.**
 
-## 25-10-2026 (2.ª parte) — Cambios aprobados por César (HECHO EN LOCAL, FALTA SUBIR)
+## 26-10-2026 — Aviso de Search Console: datos estructurados de Eventos (aprobado; pendiente de que César publique con SUBIR_WEB_CESAR.command)
+
+- Google avisó (no crítico) de que a los eventos les faltaban «description», «offers» y «organizer».
+- `build.py`: cada evento lleva ahora una descripción automática. Organizador y entradas solo salen si están en `agenda.json` (campos opcionales `organizador`, `organizador_url`, `entradas_url`, `precio_desde`, `moneda`). No se inventa nada.
+- Datos añadidos (fuentes oficiales, 26-10-2026): Katiuska → AGAO (Asociación Gayarre Amigos de la Ópera), entradas desde 27 € (teatrogayarre.com/katiuska-de-pablo-sorozabal/); Cracovia → Filharmonia Krakowska, entradas desde 20 PLN (ficha en filharmoniakrakow.pl, 18-12 19:30 y 19-12 18:00).
+- Toledo 31-10: sin organizador ni entradas en fuentes oficiales (catedralprimada.es, coro-upm.es: 20:00).
+- Copias anteriores: `Web César/to delete/build_antes_eventos_26-10-2026.py` y `agenda_antes_26-10-2026.json`.
+- Aprobado por César (26-10): «Pedro Stakof» con una f (como la ficha del Gayarre); Cracovia → «Oratorio de Navidad (Palmeri) / El cascanueces (Chaikovski – Ellington)» (programa oficial de la Filharmonia).
+- Tras publicar: Search Console → Eventos → «Validar corrección».
+
+## 25-10-2026 (2.ª parte) — Cambios aprobados por César (PUBLICADO el 25-10-2026 y comprobado en la web)
 
 - Agenda según Operabase (aprobado): Cracovia → «Concierto oratorio (Palmeri, Chaikovski, Strayhorn, Ellington)», Filharmonia Krakowska; Revoltosa Santander 24-25 abr 2026; Verbena Zarzuela 23 sep-4 oct 2026; «Pedro Stakoff».
 - Fotos: SIN créditos de fotógrafo (César pagó el servicio; campo `credito` vacío).
 - Papeles y años de los pies de foto: Carmen T. Real 2017 Escamillo (César + Operabase); El gato montés Zarzuela 2017 Juanillo, el Gato Montés (César + programa de mano); La traviata T. Real 2015 Barón Douphol; Rigoletto ABAO-Euskalduna 2013 Conde Ceprano; La malquerida Canal 2017 Esteban; La villana Zarzuela 2017 Peribáñez (Operabase); Los diamantes de la corona Zarzuela 2010 Don Sebastián (crítica de zarzuela.net, 29-4-2010).
 - Respuesta de César: La fille du régiment → 2010, Teatro Colón de A Coruña (sin papel). Iphigénie en Tauride (Teatro Real) → sin papel; año sin confirmar (la única producción encontrada es la de enero de 2011), por eso no se muestra.
 
-## 25-10-2026 — Galería de fotos de escena y Réquiem de Brahms (HECHO EN LOCAL, FALTA SUBIR con doble clic en SUBIR_WEB_CESAR.command)
+## 25-10-2026 — Galería de fotos de escena y Réquiem de Brahms (PUBLICADO el 25-10-2026 y comprobado en la web)
 
 **Galería «En escena» (/videos/ y /en/videos/):**
 - César revisó la carpeta `Web César/Fotos escena para revisar` y dejó 23 fotos de 13 producciones (añadió por su cuenta Zauberflöte, Il finto sordo, Il viaggio a Reims y La villana).
