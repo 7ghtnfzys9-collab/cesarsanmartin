@@ -2,7 +2,16 @@
 
 Última actualización: 26-10-2026. **Al empezar una sesión nueva sobre la web, Claude lee primero este archivo.**
 
-## 26-10-2026 — Aviso de Search Console: datos estructurados de Eventos (aprobado; pendiente de que César publique con SUBIR_WEB_CESAR.command)
+## 27-10-2026 — Segunda tanda de avisos de Eventos (preparado; César publica)
+
+- Google validó «description» (correo del 27-10). Nuevos avisos no críticos: offers.availability, offers.validFrom, organizer.url.
+- Hecho: Katiuska → `organizador_url` http://www.agao.es (Ayuntamiento de Pamplona y Ópera XXI) y `disponibilidad` InStock (patronbase del Gayarre, 27-10: ambas funciones a la venta). `build.py` admite el campo opcional `disponibilidad` (InStock, SoldOut…).
+- Cracovia: SIN disponibilidad (la tienda de la Filharmonia daba error el 27-10; no se pudo comprobar).
+- validFrom: no se pone (no hay fecha oficial de inicio de venta).
+- Discrepancia pendiente de César: la tienda del Gayarre dice «Entradas desde 13,50 €»; la ficha del teatro, 38 € / 27 €. En la web está 27.
+- Copias: `to delete/build_antes_eventos2_27-10-2026.py`, `to delete/agenda_antes_27-10-2026.json`.
+
+## 26-10-2026 — Aviso de Search Console: datos estructurados de Eventos (PUBLICADO el 26-10-2026 y comprobado en la web)
 
 - Google avisó (no crítico) de que a los eventos les faltaban «description», «offers» y «organizer».
 - `build.py`: cada evento lleva ahora una descripción automática. Organizador y entradas solo salen si están en `agenda.json` (campos opcionales `organizador`, `organizador_url`, `entradas_url`, `precio_desde`, `moneda`). No se inventa nada.
@@ -10,7 +19,7 @@
 - Toledo 31-10: sin organizador ni entradas en fuentes oficiales (catedralprimada.es, coro-upm.es: 20:00).
 - Copias anteriores: `Web César/to delete/build_antes_eventos_26-10-2026.py` y `agenda_antes_26-10-2026.json`.
 - Aprobado por César (26-10): «Pedro Stakof» con una f (como la ficha del Gayarre); Cracovia → «Oratorio de Navidad (Palmeri) / El cascanueces (Chaikovski – Ellington)» (programa oficial de la Filharmonia).
-- Tras publicar: Search Console → Eventos → «Validar corrección».
+- Search Console: validación de «description» INICIADA el 26-10 (por Claude). «offers» y «organizer» SIN validar a propósito: Toledo no los tiene y fallaría; validar a partir del 1-11-2026, cuando Toledo ya no esté entre las próximas.
 
 ## 25-10-2026 (2.ª parte) — Cambios aprobados por César (PUBLICADO el 25-10-2026 y comprobado en la web)
 
@@ -116,13 +125,15 @@ cesarsanmartin/                 ← repositorio de GitHub (7ghtnfzys9-collab/ces
 - DNS público (Google) ya apunta a GitHub. A las 15:20 del 20-10 el certificado HTTPS de GitHub aún se estaba emitiendo y el Chrome de César mostraba error de seguridad: normal durante la transición.
 
 **Pendiente (por orden):**
-1. HECHO 21-10-2026: el certificado se había atascado; se quitó y volvió a poner el dominio en GitHub → Pages y salió al momento. «Enforce HTTPS» activado. Comprobado en el Chrome de César: portada, /videos/ (14 vídeos), /noticias/ (6 novedades), /en/, /sitemap.xml y robots.txt cargan bien; cesarsanmartin.com sin www lleva a https://www.
-   - Ese día el feed RSS de YouTube daba error 404 (fallo temporal conocido de YouTube, suele durar horas). La web se publica con la última copia buena, así que el Short de Adriana del 20-10 aparecerá cuando YouTube vuelva a servir el feed.
-   - La tarea programada de las 07:07 no se había ejecutado aún el 21-10 a las 08:30 (GitHub retrasa o salta a veces las tareas programadas, sobre todo las recién creadas). Se lanzó a mano (Actions → Publicar la web → Run workflow) y funcionó. Comprobar en los próximos días que aparecen ejecuciones «scheduled».
-3. Google Search Console: dar de alta `https://www.cesarsanmartin.com` (ya hay un TXT de verificación de Google en el DNS; comprobar si es de Search Console) y enviar `sitemap.xml`.
-4. Instagram automático (opcional): behold.so (ver abajo).
-5. Cuando todo funcione: valorar dar de baja el alojamiento de IONOS si se paga aparte (el contrato que aparece es «IONOS Pack Dominio», n.º 63925398; comprobar qué incluye antes de decidir).
-6. Preguntar a César si se añade a la agenda el concierto de Málaga del 16-10-2026.
+1. **A partir del 1-11-2026**: Search Console → Eventos → «Falta el campo "offers"» y «Falta el campo "organizer"» → «Validar corrección» (no se hizo el 26-10 porque Toledo, 31-10, no tiene esos datos y la validación fallaría). Revisar también que la validación de «description» (iniciada el 26-10) ha terminado bien.
+2. Comprobar en Search Console que `sitemap.xml` está enviado (Search Console ya está activo como propiedad de dominio).
+3. (Opcional) Año de Iphigénie en Tauride si César lo confirma (¿2011?).
+4. Resto de dudas de la agenda (ver secciones de arriba).
+5. Instagram automático (opcional): behold.so (ver abajo).
+6. Valorar dar de baja el alojamiento de IONOS si se paga aparte («IONOS Pack Dominio», n.º 63925398; comprobar qué incluye).
+7. Cuando sea público: Desde la casa de los muertos (Janáček, 2028, dir. escena Christoph Loy).
+8. La carpeta `Web César/Fotos escena para revisar` ya no hace falta: César decide si la mueve a «to delete».
+9. Futuras funciones: al añadirlas a `agenda.json`, poner si se puede `organizador`, `entradas_url`, `precio_desde` y `moneda` (solo de fuente oficial) para que Google no vuelva a avisar.
 
 ## Instagram automático (opcional)
 

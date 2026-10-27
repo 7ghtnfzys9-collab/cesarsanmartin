@@ -358,6 +358,8 @@ def evento(a, lang):
         if a.get("precio_desde") is not None and a.get("moneda"):
             of["price"] = str(a["precio_desde"])
             of["priceCurrency"] = a["moneda"]
+        if a.get("disponibilidad"):  # p. ej. "InStock", "SoldOut" (comprobado en la web de venta)
+            of["availability"] = "https://schema.org/" + a["disponibilidad"]
         ev["offers"] = of
     return ev
 
