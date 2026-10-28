@@ -2,13 +2,13 @@
 
 Última actualización: 26-10-2026. **Al empezar una sesión nueva sobre la web, Claude lee primero este archivo.**
 
-## 27-10-2026 — Segunda tanda de avisos de Eventos (preparado; César publica)
+## 27-10-2026 — Segunda tanda de avisos de Eventos (PUBLICADO el 27-10-2026 y comprobado en la web)
 
 - Google validó «description» (correo del 27-10). Nuevos avisos no críticos: offers.availability, offers.validFrom, organizer.url.
 - Hecho: Katiuska → `organizador_url` http://www.agao.es (Ayuntamiento de Pamplona y Ópera XXI) y `disponibilidad` InStock (patronbase del Gayarre, 27-10: ambas funciones a la venta). `build.py` admite el campo opcional `disponibilidad` (InStock, SoldOut…).
 - Cracovia: SIN disponibilidad (la tienda de la Filharmonia daba error el 27-10; no se pudo comprobar).
 - validFrom: no se pone (no hay fecha oficial de inicio de venta).
-- Discrepancia pendiente de César: la tienda del Gayarre dice «Entradas desde 13,50 €»; la ficha del teatro, 38 € / 27 €. En la web está 27.
+- Discrepancia pendiente de César: la tienda del Gayarre dice «Entradas desde 13,50 €»; la ficha del teatro, 38 € / 27 €. César publicó con 27 € (se mantiene).
 - Copias: `to delete/build_antes_eventos2_27-10-2026.py`, `to delete/agenda_antes_27-10-2026.json`.
 
 ## 26-10-2026 — Aviso de Search Console: datos estructurados de Eventos (PUBLICADO el 26-10-2026 y comprobado en la web)
@@ -126,7 +126,7 @@ cesarsanmartin/                 ← repositorio de GitHub (7ghtnfzys9-collab/ces
 
 **Pendiente (por orden):**
 1. **A partir del 1-11-2026**: Search Console → Eventos → «Falta el campo "offers"» y «Falta el campo "organizer"» → «Validar corrección» (no se hizo el 26-10 porque Toledo, 31-10, no tiene esos datos y la validación fallaría). Revisar también que la validación de «description» (iniciada el 26-10) ha terminado bien.
-2. Comprobar en Search Console que `sitemap.xml` está enviado (Search Console ya está activo como propiedad de dominio).
+2. HECHO 27-10: sitemap nuevo enviado en Search Console (el anterior era de 2022 y fallaba; solo había 2 páginas indexadas). Revisar en unos días Indexación → Páginas.
 3. (Opcional) Año de Iphigénie en Tauride si César lo confirma (¿2011?).
 4. Resto de dudas de la agenda (ver secciones de arriba).
 5. Instagram automático (opcional): behold.so (ver abajo).
