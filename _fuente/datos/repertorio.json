@@ -1,0 +1,119 @@
+{
+  "_nota": "Repertorio de César, tomado de su dossier «César San Martín · Barítono lírico» (15-11-2026). 'c' = compositor o subapartado (vacío = sin etiqueta).",
+  "grupos": [
+    {
+      "es": "Ópera · Papeles cantados en escena",
+      "en": "Opera · Roles performed on stage",
+      "items": [
+        {
+          "c": "Rossini",
+          "es": "Fígaro (Il barbiere di Siviglia) y Don Álvaro (Il viaggio a Reims)",
+          "en": "Figaro (Il barbiere di Siviglia) and Don Álvaro (Il viaggio a Reims)"
+        },
+        {
+          "c": "Mozart",
+          "es": "Don Giovanni, el Conde Almaviva (Le nozze di Figaro) y Papageno (Die Zauberflöte)",
+          "en": "Don Giovanni, Count Almaviva (Le nozze di Figaro) and Papageno (Die Zauberflöte)"
+        },
+        {
+          "c": "Donizetti",
+          "es": "Malatesta (Don Pasquale), Belcore (L'elisir d'amore) y Alfonso XI (La favorita)",
+          "en": "Malatesta (Don Pasquale), Belcore (L'elisir d'amore) and Alfonso XI (La favorita)"
+        },
+        {
+          "c": "Puccini",
+          "es": "Marcello y Schaunard (La bohème), Sharpless (Madama Butterfly) y Marco (Gianni Schicchi)",
+          "en": "Marcello and Schaunard (La bohème), Sharpless (Madama Butterfly) and Marco (Gianni Schicchi)"
+        },
+        {
+          "c": "Massenet",
+          "es": "Lescaut y Brétigny (Manon)",
+          "en": "Lescaut and Brétigny (Manon)"
+        },
+        {
+          "c": "Bizet",
+          "es": "Escamillo y Le Dancaïre (Carmen)",
+          "en": "Escamillo and Le Dancaïre (Carmen)"
+        },
+        {
+          "c": "Leoncavallo",
+          "es": "Silvio (Pagliacci)",
+          "en": "Silvio (Pagliacci)"
+        },
+        {
+          "c": "Verdi",
+          "es": "Barón Douphol (La traviata), Marullo y Ceprano (Rigoletto)",
+          "en": "Baron Douphol (La traviata), Marullo and Ceprano (Rigoletto)"
+        },
+        {
+          "c": "Barroco y rarezas|Baroque and rarities",
+          "es": "Astolfo (Orlando furioso, Vivaldi), Varrone (Pericca e Varrone, A. Scarlatti), Pagnacca (Il finto sordo, M. García), Julien de Médicis (Pierre de Médicis), Osmin (Zaide), Masino (La vera costanza) y General Boum (La Grande-Duchesse de Gérolstein)",
+          "en": "Astolfo (Orlando furioso, Vivaldi), Varrone (Pericca e Varrone, A. Scarlatti), Pagnacca (Il finto sordo, M. García), Julien de Médicis (Pierre de Médicis), Osmin (Zaide), Masino (La vera costanza) and General Boum (La Grande-Duchesse de Gérolstein)"
+        }
+      ]
+    },
+    {
+      "es": "Ópera · Papeles preparados",
+      "en": "Opera · Roles prepared",
+      "items": [
+        {
+          "c": "Bellini",
+          "es": "Riccardo (I puritani), Ernesto (Il pirata), Valdeburgo (La straniera) y Filippo (Beatrice di Tenda)",
+          "en": "Riccardo (I puritani), Ernesto (Il pirata), Valdeburgo (La straniera) and Filippo (Beatrice di Tenda)"
+        },
+        {
+          "c": "Donizetti",
+          "es": "Enrico (Lucia di Lammermoor), Nottingham (Roberto Devereux), Cecil (Maria Stuarda), Severo (Poliuto) y Sulpice (La fille du régiment)",
+          "en": "Enrico (Lucia di Lammermoor), Nottingham (Roberto Devereux), Cecil (Maria Stuarda), Severo (Poliuto) and Sulpice (La fille du régiment)"
+        },
+        {
+          "c": "Rossini",
+          "es": "Dandini (La Cenerentola), Taddeo (L'italiana in Algeri), Prosdocimo (Il turco in Italia), Macrobio (La pietra del paragone), Guillaume Tell y Slook (La cambiale di matrimonio)",
+          "en": "Dandini (La Cenerentola), Taddeo (L'italiana in Algeri), Prosdocimo (Il turco in Italia), Macrobio (La pietra del paragone), Guillaume Tell and Slook (La cambiale di matrimonio)"
+        },
+        {
+          "c": "Verdi",
+          "es": "Rodrigo (Don Carlo) y Miller (Luisa Miller)",
+          "en": "Rodrigo (Don Carlo) and Miller (Luisa Miller)"
+        },
+        {
+          "c": "Puccini",
+          "es": "Lescaut (Manon Lescaut) y Ping (Turandot)",
+          "en": "Lescaut (Manon Lescaut) and Ping (Turandot)"
+        },
+        {
+          "c": "Otros|Others",
+          "es": "Guglielmo (Così fan tutte), Mercutio (Roméo et Juliette) y Hérode (Hérodiade)",
+          "en": "Guglielmo (Così fan tutte), Mercutio (Roméo et Juliette) and Hérode (Hérodiade)"
+        }
+      ]
+    },
+    {
+      "es": "Zarzuela y teatro lírico español",
+      "en": "Zarzuela and Spanish lyric theatre",
+      "items": [
+        {
+          "c": "Papeles principales|Leading roles",
+          "es": "Vidal (Luisa Fernanda), Juan de Eguía (La tabernera del puerto), Julián (La verbena de la Paloma), Felipe (La Revoltosa), Juan (Los gavilanes), Paquiro (Goyescas), Lorenzo Pérez (Doña Francisquita), Germán (La del Soto del Parral), Juan de León (Benamor), Peribáñez (La villana), Juanillo (El gato montés), Esteban (La malquerida), Joaquín (La reina mora) y Don Manolito",
+          "en": "Vidal (Luisa Fernanda), Juan de Eguía (La tabernera del puerto), Julián (La verbena de la Paloma), Felipe (La Revoltosa), Juan (Los gavilanes), Paquiro (Goyescas), Lorenzo Pérez (Doña Francisquita), Germán (La del Soto del Parral), Juan de León (Benamor), Peribáñez (La villana), Juanillo (El gato montés), Esteban (La malquerida), Joaquín (La reina mora) and Don Manolito"
+        },
+        {
+          "c": "Otros papeles|Other roles",
+          "es": "Pedro Stakof (Katiuska), Don Sebastián (Los diamantes de la corona), Capitán Peñaranda (Pan y toros), Don Alfonso / La Baronesa (El vizconde), Pascual (sainetes de Barbieri), Puck (Las golondrinas), Fernando (María Moliner), El Presunto Implicado (Policías y ladrones), Trabucos (The Magic Opal) y el Marqués (El dominó azul)",
+          "en": "Pedro Stakof (Katiuska), Don Sebastián (Los diamantes de la corona), Captain Peñaranda (Pan y toros), Don Alfonso / La Baronesa (El vizconde), Pascual (Barbieri sainetes), Puck (Las golondrinas), Fernando (María Moliner), El Presunto Implicado (Policías y ladrones), Trabucos (The Magic Opal) and the Marquis (El dominó azul)"
+        }
+      ]
+    },
+    {
+      "es": "Oratorio y sinfónico",
+      "en": "Oratorio and symphonic",
+      "items": [
+        {
+          "c": "",
+          "es": "Carmina Burana (Orff), Novena Sinfonía (Beethoven), Un réquiem alemán (Brahms), Réquiem (Fauré), Réquiem y Misa de la Coronación (Mozart), El Mesías (Händel), Misa en fa mayor BWV 233 (Bach), Te Deum (Charpentier) y Misa de los niños (Rutter)",
+          "en": "Carmina Burana (Orff), Symphony No. 9 (Beethoven), A German Requiem (Brahms), Requiem (Fauré), Requiem and Coronation Mass (Mozart), Messiah (Handel), Mass in F major BWV 233 (Bach), Te Deum (Charpentier) and Mass of the Children (Rutter)"
+        }
+      ]
+    }
+  ]
+}

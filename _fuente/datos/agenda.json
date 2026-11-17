@@ -176,7 +176,7 @@
     "fecha_texto": "24 jul",
     "inicio": "2025-07-24",
     "fin": "2025-07-24",
-    "obra": "Pierre de Médicis — Poniatowski",
+    "obra": "Pierre de Médicis — Poniatowski (en concierto)",
     "papel_es": "Julien de Médicis",
     "papel_en": "Julien de Médicis",
     "lugar": "Festival Rossini in Wildbad, Bad Wildbad (Alemania)"
@@ -200,6 +200,16 @@
     "papel_es": "Barítono solista",
     "papel_en": "Baritone soloist",
     "lugar": "Filharmonia Krakowska, Cracovia (Polonia)"
+  },
+  {
+    "anio": 2025,
+    "fecha_texto": "6 jun",
+    "inicio": "2025-06-06",
+    "fin": "2025-06-06",
+    "obra": "Carmina Burana — Orff (gala del 60.º aniversario de la Orquesta RTVE y 75.º del Coro RTVE)",
+    "papel_es": "Barítono solista",
+    "papel_en": "Baritone soloist",
+    "lugar": "Teatro Monumental, Madrid (Orquesta y Coro RTVE)"
   },
   {
     "anio": 2025,

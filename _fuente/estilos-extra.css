@@ -116,3 +116,16 @@ h2.section-label,h3.section-label{font-weight:300;}
 .visor-nav{top:50%;transform:translateY(-50%);font-size:56px;}
 .visor-prev{left:4px;}.visor-next{right:4px;}
 @media(max-width:600px){.gal-masonry{columns:2;column-gap:8px;}.visor figure{padding:48px 8px 16px;}.visor-nav{top:auto;bottom:8px;transform:none;}}
+
+/* Repertorio (15-11-2026) */
+.repe-grupo{margin-top:44px;}
+.repe-grupo:first-of-type{margin-top:8px;}
+.repe-lista{list-style:none;border-top:1px solid var(--line-lt);}
+.repe-lista li{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:14px 0;border-bottom:1px solid var(--line-lt);font-size:16px;line-height:1.7;color:#555;}
+.repe-lista li.repe-sin{grid-template-columns:1fr;}
+.repe-c{color:var(--gray);font-weight:400;letter-spacing:.04em;}
+@media(max-width:640px){.repe-lista li{grid-template-columns:1fr;gap:2px;}}
+
+/* Vídeo externo (RTVE Play, 15-11-2026): tarjeta sin miniatura que enlaza fuera */
+.video-externo{background:linear-gradient(135deg,#2e2e2e,#1a1a1a);}
+.externo-marca{position:absolute;left:16px;top:14px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--clay-lt);}

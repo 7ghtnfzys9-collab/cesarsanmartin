@@ -41,6 +41,7 @@ e = html.escape  # escapar texto externo (redes)
 PAGINAS = {
     "inicio":   ("/", "/en/", "Inicio", "Home"),
     "bio":      ("/biografia/", "/en/biography/", "Mi historia", "My Story"),
+    "repertorio": ("/repertorio/", "/en/repertoire/", "Repertorio", "Repertoire"),
     "agenda":   ("/agenda/", "/en/schedule/", "Agenda", "Schedule"),
     "videos":   ("/videos/", "/en/videos/", "Vídeos y fotos", "Videos & Photos"),
     "noticias": ("/noticias/", "/en/news/", "Noticias", "News"),
@@ -56,6 +57,10 @@ METAS = {
             "La historia de César San Martín: del coro infantil y el piano a la Escuela Superior de Canto de Madrid, el Teatro Real, el Teatro de la Zarzuela y escenarios internacionales.",
             "Biography · César San Martín, baritone",
             "The story of César San Martín: from children's choir and piano to the Escuela Superior de Canto de Madrid, the Teatro Real, the Teatro de la Zarzuela and international stages."),
+    "repertorio": ("Repertorio · César San Martín, barítono",
+                   "Repertorio del barítono César San Martín: papeles de ópera cantados en escena y preparados, zarzuela y teatro lírico español, oratorio y obra sinfónica.",
+                   "Repertoire · César San Martín, baritone",
+                   "Repertoire of baritone César San Martín: opera roles performed on stage and prepared, zarzuela and Spanish lyric theatre, oratorio and symphonic works."),
     "agenda": ("Agenda y próximas actuaciones · César San Martín, barítono",
                "Próximas funciones y conciertos del barítono César San Martín, y el archivo de actuaciones en ópera, zarzuela y concierto desde 2021.",
                "Schedule and upcoming performances · César San Martín, baritone",
@@ -298,6 +303,7 @@ def bloque_redes(lang, n=None):
 AGENDA = leer("agenda.json")
 VIDEOS = leer("videos.json")["videos"]
 PRENSA = leer("prensa.json")
+REPERTORIO = leer("repertorio.json")
 NOTICIAS = leer("noticias.json")
 BIO = leer("biografia.json")
 FOTOS = leer("fotos.json")["fotos"] if os.path.exists(os.path.join(DATOS, "fotos.json")) else []
@@ -372,6 +378,8 @@ def descripcion_evento(a, lang):
 
 
 def video_ld(v, lang, subidas):
+    if v.get("externo_url"):
+        return None  # vídeo alojado fuera de YouTube: solo enlace
     fecha = v.get("subido") or subidas.get(v["id"], "")
     if not fecha:
         return None  # sin fecha de subida Google no acepta el vídeo; mejor no ponerlo que inventarla
@@ -528,6 +536,19 @@ def descripcion_video(v, lang):
 
 def video_html(v, lang, h="h3"):
     tx = T[lang]
+    if v.get("externo_url"):
+        titulo = f'{v["obra"]} – {pieza(v, lang)}'
+        sitio = ", ".join(x for x in (v.get("lugar"), v.get("anio")) if x)
+        linea2 = " · ".join(x for x in (v["compositor"], v.get("papel"), sitio) if x)
+        cred = v.get("creditos_es" if lang == "es" else "creditos_en")
+        ver = ("Ver en " if lang == "es" else "Watch on ") + v["externo_nombre"] + " ↗"
+        return f"""<div class="video-item">
+  <a class="video-card video-externo" href="{v['externo_url']}" target="_blank" rel="noopener" aria-label="{e(ver)}: {e(titulo)}">
+    <span class="externo-marca">{v['externo_nombre']}</span><span class="video-play">{PLAY_SVG}</span>
+  </a>
+  <div class="video-caption"><{h} class="video-name">{titulo}</{h}><span>{linea2}</span>{f'<span class="video-cred">{cred}</span>' if cred else ''}
+  <a class="video-yt" href="{v['externo_url']}" target="_blank" rel="noopener">{ver}</a></div>
+</div>"""
     titulo = f'{v["obra"]} – {pieza(v, lang)}'
     thumb = f"https://i.ytimg.com/vi/{v['id']}/hqdefault.jpg"
     sitio = ", ".join(x for x in (v.get("lugar"), v.get("anio")) if x)
@@ -650,6 +671,29 @@ def pag_bio(lang):
   <div class="wrap">
     <h2 class="section-label">{tx['trayectoria']}</h2>
     <div class="bio-cols bio-dark"><div>{col(tr[:mitad])}</div><div>{col(tr[mitad:])}</div></div>
+  </div>
+</section>
+""" + pie(lang)
+
+
+def pag_repertorio(lang):
+    """Página de repertorio (15-11-2026). Datos en datos/repertorio.json; 'c' puede ser 'ES|EN'."""
+    es = lang == "es"
+    bloques = ""
+    for g in REPERTORIO["grupos"]:
+        filas = ""
+        for it in g["items"]:
+            c = it["c"].split("|")
+            etiqueta = (c[0] if es else c[-1]) if it["c"] else ""
+            filas += (f'<li><span class="repe-c">{etiqueta}</span><span class="repe-p">{it["es" if es else "en"]}.</span></li>'
+                      if etiqueta else f'<li class="repe-sin"><span class="repe-p">{it["es" if es else "en"]}.</span></li>')
+        bloques += f'<section class="repe-grupo"><h2 class="section-label">{g["es" if es else "en"]}</h2><ul class="repe-lista">{filas}</ul></section>'
+    return cabecera("repertorio", lang) + f"""
+<section class="inner-page">
+  <div class="wrap">
+    <div class="section-label">{'Repertorio' if es else 'Repertoire'}</div>
+    <h1 class="section-title">{'Barítono lírico' if es else 'Lyric baritone'}</h1>
+    {bloques}
   </div>
 </section>
 """ + pie(lang)
@@ -893,6 +937,7 @@ def main():
     for lang in ("es", "en"):
         escribir(ruta("inicio", lang), pag_inicio(lang))
         escribir(ruta("bio", lang), pag_bio(lang))
+        escribir(ruta("repertorio", lang), pag_repertorio(lang))
         escribir(ruta("agenda", lang), pag_agenda(lang))
         escribir(ruta("videos", lang), pag_videos(lang))
         escribir(ruta("noticias", lang), pag_noticias(lang))
