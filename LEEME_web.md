@@ -2,11 +2,13 @@
 
 Última actualización: 26-10-2026. **Al empezar una sesión nueva sobre la web, Claude lee primero este archivo.**
 
-## 24-11-2026 (2) — Cambios pedidos por César (PREPARADO; falta publicar)
+## 24-11-2026 (2) — Cambios pedidos por César (PUBLICADO el 24-11-2026 y comprobado en la web)
 
 - Quitada la sección Repertorio: fuera del menú, de la web y del sitemap (`PAGINAS` en build.py). La función `pag_repertorio` y `datos/repertorio.json` se conservan por si se quiere recuperar.
-- Nombre del menú: «César S. Martín» (`nombre_corto` de ajustes.json) con la tipografía del logo (Great Vibes), regla `.nav-brand` en `estilos-extra.css`.
+- Nombre del menú: «César S. Martín» (`nombre_corto` de ajustes.json) con la tipografía del logo (Great Vibes, 21 px; 19 px en móvil; menú más ancho, máx. 1240 px, para que el nombre quede más a la izquierda), regla `.nav-brand` en `estilos-extra.css`.
 - Noticias sin Instagram: el bloque «Lo último en mis redes» de /noticias/ solo muestra YouTube (`bloque_redes(..., solo_youtube=True)`), y se quitó la noticia «Entrevista en televisión» que enlazaba a un reel de Instagram (copia en `to delete/noticias_antes_24-11-2026.json`).
+- OJO: las subidas de las 09:49 y 09:56 fallaron en GitHub («No artifacts named "github-pages" were found»), un fallo pasajero de GitHub. Se arregló con GitHub → Actions → la ejecución fallida → «Re-run jobs» → «Re-run all jobs». Si César sube y no ve los cambios, mirar primero Actions.
+- Aviso de GitHub (no urgente): las acciones del workflow usan Node.js 20, ya obsoleto; GitHub las fuerza a Node 24 y funcionan. Cuando haya versiones nuevas, actualizar `publicar.yml`.
 - Copias: `to delete/build_antes_cambios2_24-11-2026.py`, `estilos-extra_antes_cambios2_24-11-2026.css`.
 
 ## 24-11-2026 — Críticas nuevas en Prensa (PUBLICADO el 24-11-2026 y comprobado en la web: 20 críticas, 6 con enlace, ES y EN)
@@ -17,7 +19,7 @@
 - Búsqueda de críticas de 2026 (24-11, pedida por César). Añadidas 5, todas con enlace y cita corta literal: Codalario (Verbena Zarzuela, R. Chamorro; la web pone por errata «24-9-2024»), Opera World (Verbena Zarzuela, F. Figueroa, función del 30-9), Scherzo (Tabernera Bogotá, R. Visbal, función 1-8), Bachtrack (Pericca, A. Vincent), Cantabria 24 Horas (Revoltosa, firma «Claqueta»).
 - Descartadas: Opera World Verbena Oviedo (tibia: «poco aplaudido en el prólogo»), Bachtrack Goyescas (no le valora), Bachtrack y Scherzo Verbena Zarzuela 23-9 (cantó Borja Quiza), El Espectador/Drezner Tabernera (no le nombra). Sin críticas encontradas: El vizconde Bogotá/Medellín (aparte de El Nuevo Siglo), Carmina Getafe, Málaga, Brahms Toledo.
 - La nominación a los Talía 2026 YA estaba en Noticias (desde antes); no hay que añadirla.
-- 2.ª tanda (24-11, PREPARADA; falta publicar): por petición de César, frase completa en Ópera Actual (Katiuska), Scherzo (Tabernera) y Cantabria 24 Horas, con el texto que pegó él. Opera World (Verbena Zarzuela) ELIMINADA por decisión de César. Quedan 19 críticas.
+- 2.ª tanda (24-11, PUBLICADA y comprobada): por petición de César, frase completa en Ópera Actual (Katiuska), Scherzo (Tabernera) y Cantabria 24 Horas, con el texto que pegó él. Opera World (Verbena Zarzuela) ELIMINADA por decisión de César. Quedan 19 críticas.
 - Copias: `to delete/build_antes_prensa_24-11-2026.py`, `prensa_antes_24-11-2026.json`, `estilos-extra_antes_24-11-2026.css`.
 
 ## 27-10-2026 — Segunda tanda de avisos de Eventos (PUBLICADO el 27-10-2026 y comprobado en la web)
