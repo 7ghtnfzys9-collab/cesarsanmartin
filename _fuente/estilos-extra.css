@@ -129,3 +129,8 @@ h2.section-label,h3.section-label{font-weight:300;}
 /* Vídeo externo (RTVE Play, 15-11-2026): tarjeta sin miniatura que enlaza fuera */
 .video-externo{background:linear-gradient(135deg,#2e2e2e,#1a1a1a);}
 .externo-marca{position:absolute;left:16px;top:14px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--clay-lt);}
+
+/* Enlace a la crítica completa (24-11-2026) */
+.press-link{grid-column:2;font-size:12px;letter-spacing:.06em;color:var(--clay);text-decoration:none;margin-top:-16px;}
+.press-link:hover{text-decoration:underline;}
+@media(max-width:600px){.press-link{grid-column:1;margin-top:0;}}

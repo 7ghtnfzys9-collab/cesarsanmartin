@@ -842,14 +842,16 @@ def pag_prensa(lang):
     tx = T[lang]
     items = "".join(
         f'<figure class="press-item"><figcaption><cite class="press-source">{p["medio"]}</cite><div class="press-meta">{p["detalle"]}</div></figcaption>'
-        f'<blockquote lang="{lang if lang == "es" else "en"}">{p["es"] if lang == "es" else p["en"]}</blockquote></figure>'
+        f'<blockquote lang="{lang if lang == "es" else "en"}">{p["es"] if lang == "es" else p["en"]}</blockquote>'
+        + (f'<a class="press-link" href="{p["url"]}" target="_blank" rel="noopener">{"Leer la crítica completa" if lang == "es" else "Read the full review (in Spanish)"} →</a>' if p.get("url") else "")
+        + '</figure>'
         for p in PRENSA)
     nota = "" if lang == "es" else '<p class="press-nota">Reviews originally published in Spanish; English translations.</p>'
     return cabecera("prensa", lang) + f"""
 <section class="inner-page">
   <div class="wrap">
     <div class="section-label">{tx['prensa']}</div>
-    <h1 class="section-title">{'Críticas · Temporada 2025/26' if lang == 'es' else 'Reviews · Season 2025/26'}</h1>
+    <h1 class="section-title">{'Críticas' if lang == 'es' else 'Reviews'}</h1>
     {nota}{items}
   </div>
 </section>

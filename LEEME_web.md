@@ -2,6 +2,16 @@
 
 Última actualización: 26-10-2026. **Al empezar una sesión nueva sobre la web, Claude lee primero este archivo.**
 
+## 24-11-2026 — Crítica de Katiuska en Prensa (PREPARADO; falta publicar con SUBIR_WEB_CESAR.command)
+
+- Añadida arriba en `datos/prensa.json`: Ópera Actual, Alberto Osácar, «Una 'Katiuska' muy solvente» (23-11-2026, función del 20-11 en Pamplona). Cita corta aprobada por César: «El gran triunfador de la noche fue el barítono madrileño César San Martín» (en el original pone «San Martin» sin tilde) + enlace a la crítica.
+- `prensa.json` admite ahora el campo opcional `url` → enlace «Leer la crítica completa» / «Read the full review (in Spanish)» (estilo `.press-link` en `estilos-extra.css`).
+- Título de /prensa/ cambiado a «Críticas» / «Reviews» (antes «Temporada 2025/26»), aprobado por César.
+- Búsqueda de críticas de 2026 (24-11, pedida por César). Añadidas 5, todas con enlace y cita corta literal: Codalario (Verbena Zarzuela, R. Chamorro; la web pone por errata «24-9-2024»), Opera World (Verbena Zarzuela, F. Figueroa, función del 30-9), Scherzo (Tabernera Bogotá, R. Visbal, función 1-8), Bachtrack (Pericca, A. Vincent), Cantabria 24 Horas (Revoltosa, firma «Claqueta»).
+- Descartadas: Opera World Verbena Oviedo (tibia: «poco aplaudido en el prólogo»), Bachtrack Goyescas (no le valora), Bachtrack y Scherzo Verbena Zarzuela 23-9 (cantó Borja Quiza), El Espectador/Drezner Tabernera (no le nombra). Sin críticas encontradas: El vizconde Bogotá/Medellín (aparte de El Nuevo Siglo), Carmina Getafe, Málaga, Brahms Toledo.
+- La nominación a los Talía 2026 YA estaba en Noticias (desde antes); no hay que añadirla.
+- Copias: `to delete/build_antes_prensa_24-11-2026.py`, `prensa_antes_24-11-2026.json`, `estilos-extra_antes_24-11-2026.css`.
+
 ## 27-10-2026 — Segunda tanda de avisos de Eventos (PUBLICADO el 27-10-2026 y comprobado en la web)
 
 - Google validó «description» (correo del 27-10). Nuevos avisos no críticos: offers.availability, offers.validFrom, organizer.url.

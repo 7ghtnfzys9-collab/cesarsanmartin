@@ -1,9 +1,44 @@
 [
   {
+    "medio": "Ópera Actual",
+    "detalle": "Katiuska · Nov 2026",
+    "es": "El gran triunfador de la noche fue el barítono madrileño César San Martín.",
+    "en": "The great triumph of the evening belonged to the Madrid-born baritone César San Martín.",
+    "url": "https://www.operaactual.com/critica/una-katiuska-muy-solvente/"
+  },
+  {
+    "medio": "Codalario",
+    "detalle": "La Verbena de la Paloma (Teatro de la Zarzuela) · Sep 2026",
+    "es": "Seguro, musical y muy desenvuelto en escena el barítono César San Martín en su Julián.",
+    "en": "Assured, musical and very much at ease on stage: baritone César San Martín as Julián.",
+    "url": "https://www.codalario.com/la-verbena-de-la-paloma/criticas/critica-la-verbena-de-la-paloma-en-el-teatro-de-la-zarzuela_14963_5_49818_0_1_in.html"
+  },
+  {
+    "medio": "Opera World",
+    "detalle": "La Verbena de la Paloma (Teatro de la Zarzuela) · Sep 2026",
+    "es": "César San Martín aporta a Julián seguridad y desenvoltura.",
+    "en": "César San Martín brings assurance and ease to Julián.",
+    "url": "https://www.operaworld.es/critica-la-verbena-de-la-paloma-abre-la-temporada-del-teatro-de-la-zarzuela/"
+  },
+  {
+    "medio": "Scherzo",
+    "detalle": "La tabernera del puerto (Bogotá) · Ago 2026",
+    "es": "…una convincente actuación tanto teatral como musical.",
+    "en": "…a convincing performance, both dramatically and musically.",
+    "url": "https://scherzo.es/bogota-naturalismo-y-realismo-en-la-tabernera-del-puerto/"
+  },
+  {
     "medio": "Codalario",
     "detalle": "Pericca e Varrone · Jul 2026",
     "es": "la mezzo Sandra Ferrández y el barítono César San Martín. Ambos acreditaron desenvoltura, dominio de las tablas y plena compenetración interpretativa, además de factura musical y acentos intencionados, tanto en arias y dúos, como en los recitativos, tan fundamentales en este contexto.",
     "en": "Mezzo-soprano Sandra Ferrández and baritone César San Martín both demonstrated ease, command of the stage and full interpretative understanding, as well as musical craft and intentional phrasing, both in arias and duets and in the recitatives, so fundamental in this context."
+  },
+  {
+    "medio": "Bachtrack",
+    "detalle": "Pericca e Varrone · Jul 2026",
+    "es": "La seriedad de Sandra Ferrández y César San Martín fueron la clave del éxito.",
+    "en": "The seriousness of Sandra Ferrández and César San Martín was the key to the success.",
+    "url": "https://bachtrack.com/es_ES/critica-aranjuez-teatro-carlosiii-scarlatti-montano-garcia-ferrandez-sanmartin-orquesta-lamadrilena-julio-2026"
   },
   {
     "medio": "Bachtrack",
@@ -34,6 +69,13 @@
     "detalle": "La Revoltosa · Abr 2026",
     "es": "El barítono César San Martín, debutante en el personaje de Felipe, brilló con su bien timbrada voz que maneja con soltura y una interpretación matizada del personaje.",
     "en": "Baritone César San Martín, making his debut as Felipe, shone with his well-coloured voice which he handles with ease, and offered a nuanced interpretation of the character."
+  },
+  {
+    "medio": "Cantabria 24 Horas",
+    "detalle": "La Revoltosa · Abr 2026",
+    "es": "…una excelente voz en un «Felipe» excelente en todos los matices de su famoso personaje.",
+    "en": "…an excellent voice in a Felipe that was excellent in every nuance of this famous character.",
+    "url": "https://cantabria24horas.com/la-revoltosa/"
   },
   {
     "medio": "El Nuevo Siglo",
