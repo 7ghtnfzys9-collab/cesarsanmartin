@@ -2,6 +2,13 @@
 
 Última actualización: 26-10-2026. **Al empezar una sesión nueva sobre la web, Claude lee primero este archivo.**
 
+## 24-11-2026 (2) — Cambios pedidos por César (PREPARADO; falta publicar)
+
+- Quitada la sección Repertorio: fuera del menú, de la web y del sitemap (`PAGINAS` en build.py). La función `pag_repertorio` y `datos/repertorio.json` se conservan por si se quiere recuperar.
+- Nombre del menú: «César S. Martín» (`nombre_corto` de ajustes.json) con la tipografía del logo (Great Vibes), regla `.nav-brand` en `estilos-extra.css`.
+- Noticias sin Instagram: el bloque «Lo último en mis redes» de /noticias/ solo muestra YouTube (`bloque_redes(..., solo_youtube=True)`), y se quitó la noticia «Entrevista en televisión» que enlazaba a un reel de Instagram (copia en `to delete/noticias_antes_24-11-2026.json`).
+- Copias: `to delete/build_antes_cambios2_24-11-2026.py`, `estilos-extra_antes_cambios2_24-11-2026.css`.
+
 ## 24-11-2026 — Críticas nuevas en Prensa (PUBLICADO el 24-11-2026 y comprobado en la web: 20 críticas, 6 con enlace, ES y EN)
 
 - Añadida arriba en `datos/prensa.json`: Ópera Actual, Alberto Osácar, «Una 'Katiuska' muy solvente» (23-11-2026, función del 20-11 en Pamplona). Cita corta aprobada por César: «El gran triunfador de la noche fue el barítono madrileño César San Martín» (en el original pone «San Martin» sin tilde) + enlace a la crítica.

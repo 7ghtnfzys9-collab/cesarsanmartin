@@ -41,7 +41,7 @@ e = html.escape  # escapar texto externo (redes)
 PAGINAS = {
     "inicio":   ("/", "/en/", "Inicio", "Home"),
     "bio":      ("/biografia/", "/en/biography/", "Mi historia", "My Story"),
-    "repertorio": ("/repertorio/", "/en/repertoire/", "Repertorio", "Repertoire"),
+    # "repertorio" quitado del menú y de la web el 24-11-2026 (datos en datos/repertorio.json)
     "agenda":   ("/agenda/", "/en/schedule/", "Agenda", "Schedule"),
     "videos":   ("/videos/", "/en/videos/", "Vídeos y fotos", "Videos & Photos"),
     "noticias": ("/noticias/", "/en/news/", "Noticias", "News"),
@@ -70,9 +70,9 @@ METAS = {
                "Videos and photos · César San Martín, baritone",
                "Live videos of César San Martín: opera arias, zarzuela romanzas and concerts (Rigoletto, Il barbiere di Siviglia, Luisa Fernanda, Carmina Burana…). Photo gallery."),
     "noticias": ("Noticias · César San Martín, barítono",
-                 "Lo último de César San Martín en YouTube e Instagram, entrevistas, nominaciones y noticias sobre sus actuaciones.",
+                 "Lo último de César San Martín en YouTube, entrevistas, nominaciones y noticias sobre sus actuaciones.",
                  "News · César San Martín, baritone",
-                 "The latest from César San Martín on YouTube and Instagram, plus interviews, nominations and news about his performances."),
+                 "The latest from César San Martín on YouTube, plus interviews, nominations and news about his performances."),
     "prensa": ("Críticas y prensa · César San Martín, barítono",
                "Qué dice la crítica de César San Martín: reseñas de Codalario, Bachtrack, Ópera Actual, Opera World, Scherzo, Pro Ópera y Platea Magazine.",
                "Press reviews · César San Martín, baritone",
@@ -288,8 +288,10 @@ def tarjeta_red(it, lang):
             f'</div></article>')
 
 
-def bloque_redes(lang, n=None):
+def bloque_redes(lang, n=None, solo_youtube=False):
     items, _ = redes()
+    if solo_youtube:
+        items = [i for i in items if i["red"] == "youtube"]
     tx = T[lang]
     if n:
         items = items[:n]
@@ -445,7 +447,7 @@ def cabecera(clave, lang, ld=None, titulo=None, desc=None, noindex=False):
 <header>
 <nav aria-label="{tx['menu']}">
   <div class="nav-inner">
-    <a class="nav-brand" href="{ruta('inicio', lang)}">César San Martín</a>
+    <a class="nav-brand" href="{ruta('inicio', lang)}">{AJ['nombre_corto']}</a>
     <div class="nav-scroll"><div class="nav-links">{nav}</div></div>
     <div class="lang-switcher" role="group" aria-label="{tx['idioma']}">
       <a class="lang-btn{' active' if lang == 'es' else ''}" href="{es_url}" hreflang="es" lang="es"{' aria-current=true' if lang == 'es' else ''}>ES</a>
@@ -826,7 +828,7 @@ def pag_noticias(lang):
   <div class="wrap">
     <div class="section-label">{tx['noticias']}</div>
     <h1 class="section-title">{tx['ultimo']}</h1>
-    {bloque_redes(lang)}
+    {bloque_redes(lang, solo_youtube=True)}
   </div>
 </section>
 <section class="inner-page">
@@ -939,7 +941,6 @@ def main():
     for lang in ("es", "en"):
         escribir(ruta("inicio", lang), pag_inicio(lang))
         escribir(ruta("bio", lang), pag_bio(lang))
-        escribir(ruta("repertorio", lang), pag_repertorio(lang))
         escribir(ruta("agenda", lang), pag_agenda(lang))
         escribir(ruta("videos", lang), pag_videos(lang))
         escribir(ruta("noticias", lang), pag_noticias(lang))

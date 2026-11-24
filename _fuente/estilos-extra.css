@@ -134,3 +134,7 @@ h2.section-label,h3.section-label{font-weight:300;}
 .press-link{grid-column:2;font-size:12px;letter-spacing:.06em;color:var(--clay);text-decoration:none;margin-top:-16px;}
 .press-link:hover{text-decoration:underline;}
 @media(max-width:600px){.press-link{grid-column:1;margin-top:0;}}
+
+/* Nombre del menú con la tipografía del logo (24-11-2026) */
+.nav-brand{font-family:'Great Vibes',cursive;font-size:26px;font-weight:400;letter-spacing:0;text-transform:none;line-height:1;}
+@media(max-width:600px){.nav-brand{font-size:22px;}}
